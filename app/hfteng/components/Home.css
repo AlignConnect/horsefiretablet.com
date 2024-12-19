@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.fontPoppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fontBebas {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.fontNoto {
+    font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+.fontKalnia {
+    font-family: 'Kalnia', serif;
+}
+
+.fontArya {
+    font-family: 'Arya', sans-serif;
+}
+
+.fontBebas {
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+body {
+    font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+.first_bg {
+    background-image: linear-gradient(95deg, hsl(12deg 63% 3%) 0%, hsl(17deg 56% 5%) 10%, hsl(21deg 53% 6%) 20%, hsl(25deg 51% 7%) 30%, hsl(28deg 49% 8%) 40%, hsl(30deg 48% 8%) 50%, hsl(32deg 45% 8%) 60%, hsl(35deg 42% 8%) 70%, hsl(37deg 38% 7%) 80%, hsl(39deg 33% 7%) 90%, hsl(42deg 28% 7%) 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.textGradiant {
+    background-image: linear-gradient(135deg, hsl(42deg 88% 56%) 0%, hsl(40deg 93% 67%) 10%, hsl(38deg 99% 76%) 20%, hsl(38deg 100% 84%) 30%, hsl(38deg 100% 92%) 40%, hsl(0deg 0% 100%) 50%, hsl(38deg 100% 92%) 60%, hsl(38deg 100% 84%) 70%, hsl(38deg 99% 76%) 80%, hsl(40deg 93% 67%) 90%, hsl(42deg 88% 56%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+
+
+.header_benifits_ul ul li::marker {
+    content: '\2728';
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+}
+
+
+.header_benifits_ul ul li {
+    padding: 5px 0 5px 0;
+
+}
+
+.second_bg {
+    background-image: url('https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/bbd54a8e-4e0a-4345-ec4e-763d55998400/public');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.doctor_header_background {
+    background-image: linear-gradient(to right bottom, #8cc3ee, #9bc7ec, #a9ccea, #b6d0e8, #c3d5e6, #c1d4e7, #bfd3e9, #bdd2ea, #aecbf0, #a0c4f5, #93bcfa, #87b4ff);
+}
+
+.form_shaddow {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+
+.floating {
+    animation-name: floating;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, -15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+@media only screen and (max-width: 600px) {
+    .first_bg {
+        background-image: linear-gradient(95deg, hsl(12deg 63% 3%) 0%, hsl(17deg 56% 5%) 10%, hsl(21deg 53% 6%) 20%, hsl(25deg 51% 7%) 30%, hsl(28deg 49% 8%) 40%, hsl(30deg 48% 8%) 50%, hsl(32deg 45% 8%) 60%, hsl(35deg 42% 8%) 70%, hsl(37deg 38% 7%) 80%, hsl(39deg 33% 7%) 90%, hsl(42deg 28% 7%) 100%);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    .hftsback {
+        background: url('https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/f022a876-9573-41c0-f6b4-15270de6f200/public');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 40%;
+    }
+}
