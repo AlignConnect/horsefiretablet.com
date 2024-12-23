@@ -3,7 +3,6 @@ import { useGlobalContext } from "@/app/statemanage/context";
 import { CustomerDataValidator, CustomerDataValue } from "@/app/commonUse/FormDataValidation";
 import axios from 'axios';
 import { useSearchParams } from "next/navigation";
-import { MdOutlineSupportAgent } from "react-icons/md";
 import dynamic from "next/dynamic";
 
 const Load = dynamic(() => import("@/app/commonUse/loader/FormLoader"), {
@@ -35,10 +34,10 @@ const Form = () => {
             formdata.append("name", getCustomData.name)
             formdata.append("phone", getCustomData.phone)
             formdata.append("address", getCustomData.address)
-            formdata.append("post", "Horsefiretablet.com/HF99")
+            formdata.append("post", "Horsefiretablet.com/HF71")
             formdata.append("ip", check ? check : "")
             formdata.append("checkout_toogle", checkoutDetail.checkoutChecked)
-            formdata.append("blog_url", process.env.NEXT_APP_URL_HF99 ?? "horsefiretablet.com/hf99")
+            formdata.append("blog_url", process.env.NEXT_APP_URL_HF71 ?? "horsefiretablet.com/hf71")
 
             // let tracker = searchParams.get("krt-tracker");
             const searchParamss_krt = searchParams.get("krt");
@@ -82,46 +81,28 @@ const Form = () => {
                 loading && <Load />
             }
 
-            <div className="fontNoto"  >
 
-                <div className="grid grid-cols-12 m-0 gap-6 items-center">
-                    <div className="col-span-12 md:col-span-6  mt-1 md:mt-0">
-                        <img src='https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/06983dc6-573d-4939-f688-a9c704964700/public' alt="pic" width='100%' height='100%' className='rouded-xl' loading='lazy' />
-                    </div>
-                    <div className="col-span-12 md:col-span-6" id='form'>
-                        <div className=" " id='formcallhide'>
-
-                            {/* <h1 className=" text-3xl md:text-4xl text-yellow-400 text-center fw-bold mb-2 md:mb-6 font-extrabold">कॉल पर विशेषज्ञ डॉक्टरों से मुफ्त सलाह के लिए फॉर्म भरें!</h1> */}
-
-
-                            <div className="mx-auto font-poppin  bg-transparent px-4 py-6  rounded-lg ">
-                                <div>
-                                    <div className="text-start mb-5 sm:mb-5">
-                                        <h1 className=" text-4xl font-bold fontAnton"> Contact Us </h1>
-                                        <p className="pt-5 text-4xl text-gray-700">Provide Your Details and we will get back to you</p>
-                                    </div>
-                                    <form className="space-y-3">
-                                        {CustomerDataValue?.map((data, key) => {
-                                            return <div className="flex flex-col my-6" key={key}>
-                                                {/* <label className="font-semibold text-md py-1">{data.label}</label> */}
-                                                <div className="relative bg-[#ffe401] rounded-2xl">
-                                                    <input {...data.inputValue} placeholder={data.label} className={`text-black text-xl fontNoto bg-transparent rounded-md px-4 py-5 w-full  focus:outline-none  ${data.icon ? 'pl-[3.5rem]' : ''}`} onChange={handleChange} value={CustomerData[data.inputValue.name]} />
-                                                    {data.icon && <span className="absolute ransform translate-x-[-50%] translate-y-[-50%] top-1/2 left-5 border-r border-black px-2">{data.icon}</span>}
-                                                </div>
-                                            </div>
-                                        })}
-                                        <div className="flex items-center pt-4 ">
-                                            <button onClick={handleFormSubmit} type="button" className="bg-black text-xl font-bold p-3 pt-3 md:w-72 w-full rounded-xl hover:bg-[#293a6e]/80 transition-colors text-white">
-                                                SUBMIT
-                                            </button>
-                                        </div>
-                                    </form>
+            <div className="mx-auto fontNoto  bg-transparent px-4 py-6 border rounded-lg" style={{background:"rgb(230 230 230 / 5%)"}} id='formcallhide'>
+                <div>
+                    <h1 className="text-center text-4xl py-5 font-bold  border-bottom border-black text-white fontPoppins"> Contact Us </h1>
+                    <form className="space-y-3 text-white" >
+                        {CustomerDataValue?.map((data, key) => {
+                            return <div className="flex flex-col my-6" key={key}>
+                                <label className="font-semibold text-2xl py-3">{data.label}</label>
+                                <div className="relative">
+                                    <input {...data.inputValue} className={`px-1 py-7 bg-black border w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 ${data.icon ? 'pl-[3.5rem]' : ''}`} onChange={handleChange} value={CustomerData[data.inputValue.name]} />
+                                    {data.icon && <span className="absolute ransform translate-x-[-50%] translate-y-[-50%] top-1/2 left-5 border-r border-white px-2">{data.icon}</span>}
                                 </div>
                             </div>
+                        })}
+                        <div className="flex justify-center items-center pt-4 ">
+                            <button onClick={handleFormSubmit} type="button" className="bg-yellow-400 text-xl font-bold p-3 md:w-72 text-black fontPoppins w-full rounded-xl hover:bg-yellow-400/80 transition-colors ">
+                                SUBMIT
+                            </button>
                         </div>
-                    </div>
-
+                    </form>
                 </div>
+
             </div>
         </div>
 

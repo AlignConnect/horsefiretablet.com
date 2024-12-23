@@ -21,7 +21,7 @@ const section1 = () => {
 
 
             <div className=' bg-[url(https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/00712365-111b-4e6e-0dd2-977d0d547000/public)] text-white bg-cover pb-8' >
-                <div className='fontNoto text-xl'>
+                <div className='fontNoto text-xl py-5'>
                     <h1 className='w-[60%] text-center font-semibold mx-auto text-2xl py-5'>अध्ययनों से पता चलता है कि विभिन्न क्षेत्रों में लिंग के औसत आकार में बड़ा अंतर होता है। अफ्रीकी देशों की आबादी अक्सर दक्षिण एशिया (भारत सहित) की तुलना में बड़े लिंग आकार की रिपोर्ट करती है।</h1>
                 </div>
 
@@ -128,29 +128,21 @@ const section1 = () => {
 
 
 
-                <div className='w-[70%] mx-auto flex items-center justify-center gap-3 bg-[#fff116] p-5 my-5 rounded-xl'>
+                <div className='x-style w-[70%] mx-auto flex items-center justify-center gap-10 bg-[#fff116] p-10 my-5 rounded-xl  border-2 border-white '>
                     <div>
-                        <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/e0008e08-aac2-4adf-5176-cd47d0f92700/public" alt="sdsd" loading='lazy' className='min-w-[300px] rounded-full' />
+                        <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/e0008e08-aac2-4adf-5176-cd47d0f92700/public" alt="sdsd" loading='lazy' className='min-w-[400px] rounded-full ' />
                     </div>
 
                     <div className='  fontNoto'>
-                        <h1 className='text-3xl font-bold'>
-                            क्यों कमजोर है भारतीय पुरुषों का लिंग?
+                        <h1 className='text-5xl font-black leading-tight'>
+                            <p>अफ्रीकन पुरुषों के बड़े लिंग</p>
+                            <p>का रहस्य क्या है?</p>
                         </h1>
 
-                        <p className='text-xl py-5'>अमेरिका की एक सेक्सुअल हेल्थ संस्था Institute for Advanced Study of Human Sexuality (IASHS) के प्रोफेसर Dr. Ted McIlvenna ने परीक्षण में खुलासा किया है की एशियाई देशों (भारत, पाकिस्तान, चीन, जापान, नेपाल, अन्य ) के आहार में लिंग को पोषण देने वाले तत्वों की कमी है। जिसकी वजह से इनके लिंग का आकार अमेरिका और अफ्रीकन देशों के तुलना में काफी कम और कमजोर होता है। साथ ही शरीर की स्टैमिना और सेक्स टाइमिंग भी बहुत कम होती है। </p>
+                        <p className='text-2xl py-7 leading-relaxed'>Dr. McIlvenna ने इनके बड़े फौलादी लिंग का श्रेय प्राकृतिक जड़ीबूटियों को दिया। उन्होंने बताया की पश्चिमी और दक्षिणी देश नेचुरल हर्ब्स पर बहुत भरोसा करते है। नेचुरल हर्ब्स उनके दैनिक जीवन का हिस्सा है। जिसकी वजह से उन्हें यौन समस्या कभी नहीं होती। इतना ही नहीं वो अपने ज्यादातर समस्याओं को हर्ब्स की मदद से ही ठीक कर लेते है। </p>
                     </div>
 
                 </div>
-
-
-
-
-
-
-
-
-
 
             </div>
 

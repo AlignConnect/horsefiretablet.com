@@ -7,17 +7,18 @@ const Header = () => {
         <div className=''>
             <div className="bg-[url(https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/hfarc2/public)] bg-cover text-white">
 
-                <div className='grid w-[70%] mx-auto grid-cols-2 items-center '>
+                <div className='grid w-[80%] mx-auto grid-cols-2 items-center '>
 
                     <div className='fontAnton'>
                         <h1 className='text-4xl '>#1 Selling Sex Booster in India</h1>
 
 
-                        <div className='font-bold text-7xl my-5 bg-gradient-to-b to-[#fee600] from-[#ef3803] text-transparent bg-clip-text'>
-                            Horse Fire Tablet
+                        <div className=' uppercase text-7xl mb-4 bg-gradient-to-b to-[#ef3803] from-[#fee600] text-transparent bg-clip-text'>
+                            <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/f9804568-0bdf-484f-6f78-9d08940af700/public" alt="sdsd" loading='lazy' className='w-3/2 relative -left-2' />
+                            {/* Horse Fire Tablet */}
                         </div>
 
-                        <div className='text-6xl font-[700] fontNoto tracking-wider leading-none'>
+                        <div className='text-6xl font-[700] fontNoto  leading-none'>
                             <p>
                                 Get Big Penis,
                             </p>
@@ -32,7 +33,7 @@ const Header = () => {
 
                         <div className='fontPoppins text-xl font-semibold'>
                             <p className='flex items-center  '> <MdKeyboardDoubleArrowRight size={"35px"} />  GET HARD ROCK ERECTIONS</p>
-                            <p className='flex items-center '> <MdKeyboardDoubleArrowRight size={"35px"} /> GET LONG LASTING ERECTIONS</p>
+                            <p className='flex items-center '> <MdKeyboardDoubleArrowRight size={"35px"} /> GET LONG LASTING TIMING</p>
                         </div>
 
                         <div className=''>
