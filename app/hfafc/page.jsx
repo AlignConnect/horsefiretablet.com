@@ -4,12 +4,14 @@ import './Home.css'
 
 
 const Header = dynamic(() => import('@/app/hfafc/component/Header'))
+const Section1 = dynamic(() => import('@/app/hfafc/component/Section1'))
 
 const page = () => {
   return (
     <div>
 
       <Header />
+      <Section1 />
 
       
     </div>
