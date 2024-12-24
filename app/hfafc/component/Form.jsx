@@ -10,16 +10,25 @@ const Load = dynamic(() => import("@/app/commonUse/loader/FormLoader"), {
     loading: () => <p>df</p>
 });
 
+const Fliama = dynamic(() => import('@/app/hfafc/component/FlipAmazon'));
+
+const AmaFlipDialog = dynamic(() => import('@/app/commonUse/AmaFlipDialog/AmaFlipDialog'), {
+    loading: () => <p>load</p>
+});
 
 
 const Form = () => {
     const searchParams = useSearchParams();
 
-    const { CustomerData, setCustomerData, checkoutDetail, setLoading, loading } = useGlobalContext();
+    const { CustomerData, setCustomerData, checkoutDetail, setLoading, loading, openPopup } = useGlobalContext();
 
     const handleChange = async (e) => {
         setCustomerData({ ...CustomerData, [e.target.name]: e.target.value })
     }
+
+
+
+
 
     const handleFormSubmit = async (e) => {
         e.preventDefault();
@@ -35,10 +44,10 @@ const Form = () => {
             formdata.append("name", getCustomData.name)
             formdata.append("phone", getCustomData.phone)
             formdata.append("address", getCustomData.address)
-            formdata.append("post", "Horsefiretablet.com/HF99")
+            formdata.append("post", "Horsefiretablet.com/hfafc")
             formdata.append("ip", check ? check : "")
             formdata.append("checkout_toogle", checkoutDetail.checkoutChecked)
-            formdata.append("blog_url", process.env.NEXT_APP_URL_HF99 ?? "horsefiretablet.com/hf99")
+            formdata.append("blog_url", process.env.NEXT_APP_URL_HFAFC ?? "horsefiretablet.com/hfafc")
 
             // let tracker = searchParams.get("krt-tracker");
             const searchParamss_krt = searchParams.get("krt");
@@ -60,13 +69,19 @@ const Form = () => {
                     let destination = decodeURI(data.destination)
                     let name = destination.split("?name=")[1].split("&")[0]
                     let phone = destination.split("&phone=")[1].split("&")[0]
-                    return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=${name}&phone=${phone}`
+                    // return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=${name}&phone=${phone}`
+                    return openPopup();
+
                 }
                 setLoading(false)
-                return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=&phone=`
+                // return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=&phone=`
+                return openPopup();
+
             } catch (err) {
                 setLoading(false)
-                return window.location.href = checkoutDetail.checkoutUrl;
+                // return window.location.href = checkoutDetail.checkoutUrl;
+                return openPopup();
+
             }
         } catch (error) {
             setLoading(false)
@@ -75,12 +90,16 @@ const Form = () => {
 
     }
 
-    return (
-        <div id="form" >
 
-            {
+
+
+
+    return (
+        <div>
+
+            {/* {
                 loading && <Load />
-            }
+            } */}
 
             <div className="fontNoto"  >
 
@@ -88,7 +107,13 @@ const Form = () => {
                     <div className="col-span-12 md:col-span-6  mt-1 md:mt-0">
                         <img src='https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/06983dc6-573d-4939-f688-a9c704964700/public' alt="pic" width='100%' height='100%' className='rouded-xl' loading='lazy' />
                     </div>
-                    <div className="col-span-12 md:col-span-6" id='form'>
+                    <div className="col-span-12 md:col-span-6">
+
+
+                        <div className="block sm:hidden">
+                            <Fliama />
+                        </div>
+
                         <div className=" " id='formcallhide'>
 
                             {/* <h1 className=" text-3xl md:text-4xl text-yellow-400 text-center fw-bold mb-2 md:mb-6 font-extrabold">कॉल पर विशेषज्ञ डॉक्टरों से मुफ्त सलाह के लिए फॉर्म भरें!</h1> */}
@@ -98,7 +123,7 @@ const Form = () => {
                                 <div>
                                     <div className="text-start mb-5 sm:mb-5">
                                         <h1 className=" text-4xl font-bold fontAnton"> Contact Us </h1>
-                                        <p className="pt-5 text-4xl text-gray-700">Provide Your Details and we will get back to you</p>
+                                        <p className="pt-5 text-xl sm:text-4xl text-gray-700">Provide Your Details and we will get back to you</p>
                                     </div>
                                     <form className="space-y-3">
                                         {CustomerDataValue?.map((data, key) => {
@@ -120,9 +145,11 @@ const Form = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
+
+            <AmaFlipDialog type={"ts"} />
+
         </div>
 
 

@@ -1,3 +1,4 @@
+"use client"
 import dynamic from 'next/dynamic'
 import React from 'react'
 import './Home.css'
@@ -9,6 +10,9 @@ const Section2 = dynamic(() => import('@/app/hfafc/component/Section2'))
 const Section3 = dynamic(() => import('@/app/hfafc/component/Section3'))
 
 const CoUse = dynamic(() => import('@/app/hfafc/component/most_selling_3'))
+
+
+const Review = dynamic(() => import('@/app/hf71/components/CustomerReview'))
 
 const Footer = dynamic(() => import('@/app/commonUse/Footer'))
 
@@ -23,6 +27,11 @@ const page = () => {
       <Section2 />
       <Section3 />
       <CoUse />
+
+      <div className='w-full mx-auto sm:w-[768px]'>
+        <Review />
+      </div>
+
       <Footer />
       <Footerpop />
 

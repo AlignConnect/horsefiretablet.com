@@ -5,20 +5,24 @@ import axios from 'axios';
 import { useSearchParams } from "next/navigation";
 import dynamic from "next/dynamic";
 
-const Load = dynamic(() => import("@/app/commonUse/loader/FormLoader"), {
-    loading: () => <p>df</p>
-});
+// const Load = dynamic(() => import("@/app/commonUse/loader/FormLoader"), {
+//     loading: () => <p>df</p>
+// });
 
 
 
 const Form = () => {
     const searchParams = useSearchParams();
 
-    const { CustomerData, setCustomerData, checkoutDetail, setLoading, loading } = useGlobalContext();
+    const { CustomerData, setCustomerData, checkoutDetail, setLoading, loading, openPopup } = useGlobalContext();
 
     const handleChange = async (e) => {
         setCustomerData({ ...CustomerData, [e.target.name]: e.target.value })
     }
+
+
+    const AmaFlipDialog = dynamic(() => import('@/app/commonUse/AmaFlipDialog/AmaFlipDialog'));
+
 
     const handleFormSubmit = async (e) => {
         e.preventDefault();
@@ -34,10 +38,10 @@ const Form = () => {
             formdata.append("name", getCustomData.name)
             formdata.append("phone", getCustomData.phone)
             formdata.append("address", getCustomData.address)
-            formdata.append("post", "Horsefiretablet.com/HF71")
+            formdata.append("post", "Horsefiretablet.com/hfafc")
             formdata.append("ip", check ? check : "")
             formdata.append("checkout_toogle", checkoutDetail.checkoutChecked)
-            formdata.append("blog_url", process.env.NEXT_APP_URL_HF71 ?? "horsefiretablet.com/hf71")
+            formdata.append("blog_url", process.env.NEXT_APP_URL_HFAFC ?? "horsefiretablet.com/hfafc")
 
             // let tracker = searchParams.get("krt-tracker");
             const searchParamss_krt = searchParams.get("krt");
@@ -59,13 +63,19 @@ const Form = () => {
                     let destination = decodeURI(data.destination)
                     let name = destination.split("?name=")[1].split("&")[0]
                     let phone = destination.split("&phone=")[1].split("&")[0]
-                    return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=${name}&phone=${phone}`
+                    // return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=${name}&phone=${phone}`
+                    return openPopup();
+
                 }
                 setLoading(false)
-                return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=&phone=`
+                // return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=&phone=`
+                return openPopup();
+
             } catch (err) {
                 setLoading(false)
-                return window.location.href = checkoutDetail.checkoutUrl;
+                // return window.location.href = checkoutDetail.checkoutUrl;
+                return openPopup();
+
             }
         } catch (error) {
             setLoading(false)
@@ -74,23 +84,30 @@ const Form = () => {
 
     }
 
+
+
+
     return (
         <div id="form" >
 
-            {
+            {/* {
                 loading && <Load />
-            }
+            } */}
 
 
-            <div className="mx-auto fontNoto  bg-transparent px-4 py-6 border rounded-lg" style={{background:"rgb(230 230 230 / 5%)"}} id='formcallhide'>
-                <div>
-                    <h1 className="text-center text-4xl py-5 font-bold  border-bottom border-black text-white fontPoppins"> Contact Us </h1>
+            <div className="mx-auto fontPoppins  bg-transparent px-4 py-6 border rounded-lg" style={{ background: "rgb(230 230 230 / 5%)" }} id='formcallhide'>
+                <div className="">
+
+                    <div className="text-center">
+                        <h1 className="text-center text-4xl pt-5  font-bold  border-bottom border-white text-white fontPoppins border-b-2 inline-block"> Contact Us </h1>
+                    </div>
+
                     <form className="space-y-3 text-white" >
                         {CustomerDataValue?.map((data, key) => {
                             return <div className="flex flex-col my-6" key={key}>
                                 <label className="font-semibold text-2xl py-3">{data.label}</label>
                                 <div className="relative">
-                                    <input {...data.inputValue} className={`px-1 py-7 bg-black border w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 ${data.icon ? 'pl-[3.5rem]' : ''}`} onChange={handleChange} value={CustomerData[data.inputValue.name]} />
+                                    <input {...data.inputValue} className={`px-1 py-4 sm:py-7 bg-black border w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 ${data.icon ? 'pl-[3.5rem]' : ''}`} onChange={handleChange} value={CustomerData[data.inputValue.name]} />
                                     {data.icon && <span className="absolute ransform translate-x-[-50%] translate-y-[-50%] top-1/2 left-5 border-r border-white px-2">{data.icon}</span>}
                                 </div>
                             </div>
@@ -104,6 +121,9 @@ const Form = () => {
                 </div>
 
             </div>
+
+                        {/* <AmaFlipDialog type="ts"/> */}
+
         </div>
 
 
