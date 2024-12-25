@@ -74,7 +74,7 @@ const CarouselFile = () => {
 
 
 
-            <section className='flex justify-center items-center gap-3 gap-2 md:w-[85%] mx-auto'>
+            <section className='flex justify-center items-center gap-3  md:w-[85%] mx-auto'>
                 {
 
                     AllProductData.map((ele, key) => {
