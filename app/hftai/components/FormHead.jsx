@@ -11,6 +11,10 @@ const Load = dynamic(() => import("@/app/commonUse/loader/FormLoader"), {
     loading: () => <p>df</p>
 });
 
+const AmaFlipDialog = dynamic(() => import('@/app/commonUse/AmaFlipDialog/AmaFlipDialog'), {
+    loading: () => <p>load</p>
+});
+
 const noto = Noto_Serif_Devanagari({
     subsets: ['devanagari'],
     display: 'swap',
@@ -23,7 +27,7 @@ const Form = () => {
 
     const searchParams = useSearchParams();
 
-    const { CustomerData, setCustomerData, checkoutDetail, setLoading, loading } = useGlobalContext();
+    const { CustomerData, setCustomerData, checkoutDetail, setLoading, loading, openPopup } = useGlobalContext();
 
     const handleChange = async (e) => {
         setCustomerData({ ...CustomerData, [e.target.name]: e.target.value })
@@ -65,18 +69,19 @@ const Form = () => {
 
                 if (data.ok) {
                     setLoading(false);
-                    // openPopup();
-                    let destination = decodeURI(data.destination)
-                    let name = destination.split("?name=")[1].split("&")[0]
-                    let phone = destination.split("&phone=")[1].split("&")[0]
-                    return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=${name}&phone=${phone}`
+                    openPopup();
+                    // let destination = decodeURI(data.destination)
+                    // let name = destination.split("?name=")[1].split("&")[0]
+                    // let phone = destination.split("&phone=")[1].split("&")[0]
+                    // return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=${name}&phone=${phone}`
                 }
                 setLoading(false);
-                return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=&phone=`
+                openPopup();
+                // return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=&phone=`
             } catch (err) {
                 setLoading(false);
-                // openPopup();
-                return window.location.href = checkoutDetail.checkoutUrl;
+                openPopup();
+                // return window.location.href = checkoutDetail.checkoutUrl;
             }
         } catch (error) {
             setLoading(false);
@@ -128,6 +133,8 @@ const Form = () => {
                     </div>
                 </div>
             </div>
+            <AmaFlipDialog />
+
         </div>
 
     );

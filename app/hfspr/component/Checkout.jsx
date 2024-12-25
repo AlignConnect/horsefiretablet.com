@@ -10,6 +10,7 @@ import { Poppins } from 'next/font/google';
 
 import { IoMdStar, IoMdStarHalf } from "react-icons/io";
 import { reasons } from './Helper';
+import { useGetShopifyDataQuery } from '@/lib/service/product.service';
 
 
 
@@ -21,18 +22,15 @@ const poppin = Poppins({
 
 
 const Checkout = () => {
-
+  const { data } = useGetShopifyDataQuery({ id: "9565083402555" });
     const { allVariants, selectProducts } = useSelector(store => store.productslice);
 
     const dispatch = useDispatch();
 
-    const Currency = (value) => {
+ 
+    
 
-        return new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(value);
-
-    }
-
-
+    const imageSrc = data?.images?.find((x) => String(x?.id) === String(selectProducts?.image_id))?.src;
     // console.log(allVariants, selectProducts)
 
 
@@ -44,7 +42,7 @@ const Checkout = () => {
 
             <div className='grid grid-cols-1 sm:grid-cols-2 sm:w-[70%] mx-auto items-center'>
                 <div>
-                    <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/988de379-3769-4f87-babe-83373b1fc600/public" alt="asd" loading='lazy' className='w-[70%] mx-auto py-10' />
+                    <img src={imageSrc} alt="asd" loading='lazy' className='w-[70%] mx-auto py-10' />
                 </div>
 
                 <div className={poppin.className}>
@@ -117,7 +115,7 @@ const Checkout = () => {
                             <div className='absolute transform translate-x-[-50%] translate-y-[-50%] top-[50%]'>
 
                                 {/* <div className={`border rounded-full ${e.id === selectProducts?.id ? "bg-red-600 border-red-600" : "bg-white"}`}> */}
-                                <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/ec00d3fa-0dae-4f52-5cb5-de651bc29000/public" alt="sadsd" loading='lazy' className={`${e.id === selectProducts?.id ? "block" : "hidden"} w-[60%] mx-auto`} />
+                                <img src={"https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/ec00d3fa-0dae-4f52-5cb5-de651bc29000/public"} alt="sadsd" loading='lazy' className={`${e.id === selectProducts?.id ? "block" : "hidden"} w-[60%] mx-auto`} />
 
                                 <div className={`border-2 border-gray-500  p-4 bg-white rounded-full ${e.id !== selectProducts?.id ? "block" : "hidden"}`}>
 
