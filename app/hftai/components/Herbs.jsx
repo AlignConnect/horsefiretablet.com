@@ -154,7 +154,7 @@ const Herbs = () => {
                                         title: "COD Payment <br/> Available"
                                     },
                                     {
-                                        icons: "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/dcd9e0c7-9669-4862-8c40-393d63370200/public",
+                                        icons: "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/eb3e3433-8137-467f-a7fa-d6b4d2d75c00/public",
                                         title: "Big Discount in<br/> Winter Season"
                                     },
                                     {

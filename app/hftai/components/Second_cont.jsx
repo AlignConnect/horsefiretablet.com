@@ -10,7 +10,7 @@ const Second_cont = () => {
         return arr?.map((e, key) => {
             return <div className='bg_ing ' key={key}>
                 <div className="fontNoto bg-yellow-500  ">
-                    <div className='text-black sm:text-[1.3vw] text-lg leading-normal sm:text-justify sm:p-4 p-3'
+                    <div className='text-black sm:text-[1.3vw] text-xl leading-normal text-justify sm:p-4 p-3'
                         dangerouslySetInnerHTML={{ __html: e.sub_title }}
                     />
                     <div className='bg-white text-black fontBebas  sm:text-[1.7vw] text-2xl text-center sm:py-2 py-1'
@@ -75,7 +75,7 @@ const Second_cont = () => {
 
                     <div className=" grid sm:grid-cols-2 items-center py-5 sm:py-14">
                         <div className="">
-                            <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/3b5a47bd-5c03-4e87-44bc-3989c0e3a700/public" alt="" className='sm:w-2/3 w-full rounded-lg shadow-md mx-auto' />
+                            <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/c4404ad4-7c66-412a-7e5d-a363e1e9dc00/public" alt="" className='sm:w-2/3 w-full rounded-lg shadow-md mx-auto' />
                         </div>
                         <div className="">
                             <div className="text-black font-extrabold sm:text-[2.9vw] text-4xl sm:py-0 pt-4 px-2 leading-tight">
@@ -93,7 +93,7 @@ const Second_cont = () => {
 
             </div>
 
-            <OrderNow/>
+            {/* <OrderNow/> */}
 
             <div className="bg-black fontNoto">
 
