@@ -77,7 +77,9 @@ const AmaFlipDialog = ({ type }) => {
                         aria-label="close"
                         onClick={() => {
                             closePopup();
-                            window.location.href = ChLink.close;
+                            // window.location.href = ChLink.close;
+                            window.location.href = "https://arayurveda.shop/products/horse-fire-tablets";
+
                         }}
                         sx={{
                             position: 'absolute',

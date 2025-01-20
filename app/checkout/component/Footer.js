@@ -10,8 +10,8 @@ const Footer = () => {
                 <Image src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/cb6100ef-7663-42d5-d7a7-1fea080f5400/public" height={300} width={300} alt='no' className='mx-auto' />
             </div>
 
-            <div className='w-full md:w-3/4 mx-auto my-3'>
-                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/I6VBauarWrM?si=iWwnigf2aV8WSW9A" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <div className='w-full md:w-4/5 mx-auto my-3'>
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/h-3HVSbQAGA?si=8ZXqeQZzuMGy3jKp" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
 
             <div className='mx-auto'>

@@ -33,7 +33,12 @@ const CarouselFile = () => {
             <Carousel autoPlay interval={4000} infiniteLoop showThumbs={false} showStatus={false} showArrows={false} selectedItem={handleActive}>
 
                 <div>
-                    <Image src={"https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/05529fbe-94bc-4147-31da-736b58a00800/public"} width={1000} height={1000} alt='no' />
+                    
+                    <Image src={
+                        !handleActive ?
+                            "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/982e3c81-2af0-4159-4a85-8cde752c6600/public" : "https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/d45ee083-ab20-4c23-7100-95f123895700/public"
+                    } width={1000} height={1000} alt='no' />
+
                 </div>
 
                 <div>
