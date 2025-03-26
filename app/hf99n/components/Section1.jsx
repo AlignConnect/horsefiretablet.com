@@ -11,16 +11,22 @@ function Section1() {
                     <div className="bg-[#fef3d5] outline-dashed outline-1  p-5 -outline-offset-8 ">
                         <p className="fontArya text-2xl sm:text-3xl md:text-4xl font-bold text-center !leading-snug">अब मोटे और फौलादी लिंग के साथ देर तक सेक्स करना <span className="text-red-600"> एकदम आसान है, बस इसे आजमाए और कमाल देखें!</span>  </p>
 
-                        <div className="text-center text-white font-bold mt-[7%] grid grid-cols-2 items-center">
+                        <div className="text-center gap-5 text-white font-bold mt-[7%] grid grid-cols-2 items-center">
                             {/* <a href="#form" className="inline-block bg-gradient-to-t from-red-500 to-red-700 px-1 rounded-full py-3 pop_imagehfv">
                                 <span className=" bg-gradient-to-b from-red-500 to-red-700 px-5 rounded-full py-2">ORDER NOW</span>
                             </a> */}
 
-                            <a href="https://bit.ly/3w4Z8Ds" className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/e4e0ec8f-b49a-4b0a-2798-6cb6af788800/public" alt="pic" className="w-[200px] md:w-[300px] mx-auto " loading='lazy' /></a>
+                            <a href="https://bit.ly/3w4Z8Ds" className="">
+                                <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/e4e0ec8f-b49a-4b0a-2798-6cb6af788800/public" alt="pic" className="w-[200px] md:w-[300px] mx-auto " loading='lazy' />
+                            </a>
 
-                                <a href="https://amzn.to/4aKP4yD" className="w-full d-grid leading-none">
-                                    <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/f80384a2-95de-44ba-1509-c69d0d2df500/public" alt="pic" className="w-[200px] md:w-[300px] mx-auto mb-2" loading='lazy' />
-                                </a>
+                            {/* <a href="https://bit.ly/3WXXopP" className="w-full d-grid leading-none">
+                                <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/456eb3fa-704d-4809-68f0-2e8e5c0b7800/public" alt="pic" className="myscale w-[150px] md:w-[300px] mx-auto " loading='lazy' />
+                            </a> */}
+
+                            <a href="https://amzn.to/4aKP4yD" className="w-full d-grid leading-none">
+                                <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/f80384a2-95de-44ba-1509-c69d0d2df500/public" alt="pic" className="w-[200px] md:w-[300px] mx-auto mb-2" loading='lazy' />
+                            </a>
 
                         </div>
                     </div>

@@ -25,6 +25,12 @@ const FlipAmazon = () => {
                         <a href="https://bit.ly/3w4Z8Ds" className="w-full d-grid leading-none">
                             <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/cd5c76b5-eacd-44c0-97c8-e26301f37600/public" alt="pic" className="w-[160px] md:w-[300px] mx-auto " loading='lazy' />
                         </a>
+
+                        {/* <a href="https://bit.ly/3WXXopP" className="w-full d-grid leading-none">
+                            <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/456eb3fa-704d-4809-68f0-2e8e5c0b7800/public" alt="pic" className="myscale w-[150px] md:w-[300px] mx-auto " loading='lazy' />
+                        </a> */}
+
+
                     </div>
                     <div className="">
                         <a href="https://amzn.to/4aKP4yD" className="w-full d-grid leading-none">

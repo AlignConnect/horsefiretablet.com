@@ -147,11 +147,11 @@ const ShiProcket = () => {
         <>
 
             <button
-                className="relative w-[13rem] sm:w-[20rem] shoporder  shiprocketbutton "
+                className="relative w-[11rem] sm:w-[20rem] shoporder  shiprocketbutton "
                 onClick={handleShiProcket}
             >
                 <div className="relative">
-                    <div className="bg-green-700 text-white text-2xl font-semibold py-2 my-4 w-full rounded-xl">
+                    <div className="bg-green-700 text-white text-xl font-semibold py-2 my-4 w-full rounded-xl">
                         <div className="flex items-center align-middle justify-center">
                             BUY NOW&nbsp;
                             <img
@@ -171,7 +171,7 @@ const ShiProcket = () => {
                 <img
                     src="https://fastrr-boost-ui.pickrr.com/assets/images/boost_button/powered_by.svg "
                     alt="pic"
-                    className="absolute bottom-[1.3rem]  w-24 right-3 sm:w-28"
+                    className="absolute bottom-[1.3rem]  w-20 right-3 sm:w-28"
                 />
             </button>
         </>

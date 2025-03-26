@@ -16,7 +16,6 @@ export default () => {
     return async (args, api, extraOption) => {
 
         const data = await dataUrl(args, api, extraOption)
-        console.log(data)
         return data
     }
 

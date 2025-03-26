@@ -31,7 +31,7 @@ const YoutubeFrame = ({ vid }) => {
         <div ref={videoRef} >
             {load ? (
                 <iframe
-                    className='!w-[100%] !mx-auto h-[190px] md:h-[315px] rounded-xl'
+                    className='!w-[100%] !mx-auto h-[190px] md:h-[315px] rounded-lg'
                     src={`https://www.youtube.com/embed/${vid}`}
                     title="YouTube video player"
                     frameBorder="0"

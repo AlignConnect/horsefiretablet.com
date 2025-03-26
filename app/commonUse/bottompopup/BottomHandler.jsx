@@ -2,6 +2,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useGlobalContext } from "@/app/statemanage/context";
 import dynamic from "next/dynamic";
+import { usePathname } from 'next/navigation';
 
 
 const BottomPopupCall = dynamic(() => import('./bottomPopupCall'), {
@@ -14,7 +15,9 @@ const BottomPopupForm = dynamic(() => import('./bottomPopupForm'), {
 
 const BottomHandler = () => {
 
-    const { GetCallSetting, FetchWebCheckout, callDetail, sc } = useGlobalContext();
+    const { GetCallSetting, FetchWebCheckout, callDetail, sc, isPopupOpen } = useGlobalContext();
+
+    const data = usePathname();
 
 
     const [Ap, setAp] = useState({ api: "", key: "" });
@@ -22,7 +25,9 @@ const BottomHandler = () => {
 
     function checkcall() {
 
-        let checkcolumn = localStorage.getItem('PATH_KEY');
+        // let checkcolumn = localStorage.getItem('PATH_KEY');
+        let checkcolumn = "/" + data.split("/")[1];
+
 
         switch (checkcolumn) {
 
@@ -305,6 +310,12 @@ const BottomHandler = () => {
                     key: process.env.NEXT_APP_API_KEY_HFTAB
                 });
 
+            case "/hftalp":
+                return setAp({
+                    api: process.env.NEXT_APP_URL_HFTALP,
+                    key: process.env.NEXT_APP_API_KEY_HFTALP
+                });
+
             case "/hfuri":
                 return setAp({
                     api: process.env.NEXT_APP_URL_HFURI,
@@ -513,6 +524,21 @@ const BottomHandler = () => {
                     key: process.env.NEXT_APP_API_KEY_HFSPR
                 });
 
+
+            case "/hftnxt":
+                return setAp({
+                    api: process.env.NEXT_APP_URL_HFTNXT,
+                    key: process.env.NEXT_APP_API_KEY_HFTNXT
+                });
+
+
+            case "/hftjnt":
+                return setAp({
+                    api: process.env.NEXT_APP_URL_HFTJNT,
+                    key: process.env.NEXT_APP_API_KEY_HFTJNT
+                });
+
+
             default:
                 return setAp({
                     api: process.env.NEXT_APP_URL,
@@ -540,12 +566,18 @@ const BottomHandler = () => {
 
     return (
 
-        <div className={`w-full block sm:hidden ${sc > 50 ? "tt" : 'xx'} fixed z-[10000] text-white`}>
+        <div>
 
+            {
 
+                !isPopupOpen && <div className={`w-full block sm:hidden ${sc > 50 ? "tt" : 'xx'} fixed z-[10000] text-white`}>
+                    {
+                        callDetail.callStatus ? <BottomPopupCall /> :
+                            <BottomPopupForm />
+                    }
+                </div>
+            }
 
-            {callDetail.callStatus ? <BottomPopupCall /> :
-                <BottomPopupForm />}
         </div>
 
     )

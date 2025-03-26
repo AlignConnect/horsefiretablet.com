@@ -2,6 +2,7 @@
 import dynamic from 'next/dynamic';
 import '../ahf/components/home.css'
 import { useEffect } from 'react';
+import { useGlobalContext } from '../statemanage/context';
 
 function page() {
 
@@ -66,6 +67,8 @@ function page() {
         localStorage.setItem("PATH_KEY", "/ahfkt");
 
     }, [])
+
+
 
 
 

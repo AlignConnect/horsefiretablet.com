@@ -302,6 +302,21 @@ const nextConfig = {
         NEXT_APP_URL_HFSPR: 'https://horsefiretablet.com/hfspr',
         NEXT_APP_API_KEY_HFSPR: 'ZMWRqHpfOdDyHmQYBzBtOZLJtOlNhXkPHyJokJxZXgvenZdjaB',
 
+        // https://horsefiretablet.com/hfchk
+
+        NEXT_APP_URL_HFCHK: 'https://horsefiretablet.com/hfchk',
+        NEXT_APP_API_KEY_HFCHK: 'plAnDNYMpiGMWNsXIhRQHkRGnxEMtxJKygtvylBjhMpfdwbuSN',
+
+        NEXT_APP_URL_HFTNXT: 'https://horsefiretablet.com/hftnxt',
+        NEXT_APP_API_KEY_HFTNXT: 'xdPAOjFWEJXIKrPssVURdrDAekLlegPbTuRBwXJhVukqwPHFtN',
+
+        // https://horsefiretablet.com/hftjnt
+
+
+
+        NEXT_APP_URL_HFTJNT: 'https://horsefiretablet.com/hftjnt',
+        NEXT_APP_API_KEY_HFTJNT: 'qYssZueECtWDNirDXRKQRPRxojrDjmxDuTocXkNhqvUupuqeWI',
+
 
     },
 

@@ -96,7 +96,9 @@ const Girl = () => {
 
             </motion.section>
 
-            <Carousel showStatus={false} infiniteLoop={true} autoPlay showThumbs={false} showArrows={false} >
+            <Carousel showStatus={false} infiniteLoop={true} autoPlay
+            //  showThumbs={false} 
+             showArrows={false} >
 
                 <div className='w-full md:w-[768px] mx-auto my-3'>
                     <YoutubeFrame vid="I7RqbSjlptY" />

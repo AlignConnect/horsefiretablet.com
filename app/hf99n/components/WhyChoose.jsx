@@ -44,7 +44,9 @@ function WhyChoose() {
                         })}
                     </div>
                     <div className="sm:hidden">
-                        <Carousel autoPlay interval={4000} infiniteLoop showThumbs={false} showStatus={false} showArrows={false} useKeyboardArrows={true}>
+                        <Carousel autoPlay interval={4000} infiniteLoop
+                        //  showThumbs={false}
+                          showStatus={false} showArrows={false} useKeyboardArrows={true}>
                             {revCus.map((e, key) => {
                                 return <div className='rounded-xl m-2 p-2 sm:p-5 bg-white' key={key}>
                                     <div className="grid grid-cols-2 gap-3">

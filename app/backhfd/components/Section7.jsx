@@ -14,7 +14,7 @@ const Section6 = () => {
                 </h1>
 
                 <div className="mt-0 md:mt-5">
-                    <Carousel showStatus={false} infiniteLoop={true} autoPlay showThumbs={false} showArrows={true} >
+                    <Carousel showStatus={false} infiniteLoop={true} autoPlay  showArrows={true} >
 
                         <div className='text-center  block'>
                             <div className='text-xl md:text-2xl font-bold pt-4'>पोर्न एक्टर्स की तरह ताकत, जोश और बॉडी में स्टैमिना का निर्माण होगा। </div>

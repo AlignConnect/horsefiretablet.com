@@ -17,9 +17,16 @@ const FlipAmazon = () => {
                 <h5 className="purchaseProduct leading-tight text-center pt-2 mb-0">HORSE FIRE TABLET खरीदने के लिए निचे क्लिक करें</h5>
                 <div className="grid grid-cols-2 items-center justify-center gap-1 pb-1">
                     <div className="">
-                        <a href="https://bit.ly/3w4Z8Ds" className="w-full d-grid leading-none">
+                        {/* <a href="https://bit.ly/3w4Z8Ds" className="w-full d-grid leading-none">
                             <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/cd5c76b5-eacd-44c0-97c8-e26301f37600/public" alt="pic" className="w-[160px] md:w-[300px] mx-auto " loading='lazy' />
+                        </a> */}
+
+                        {/* https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/a34e1d92-85ba-4ac6-fc88-b5e2ff6ff000/public */}
+
+                        <a href="https://bit.ly/3w4Z8Ds" className="w-full d-grid leading-none">
+                            <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/a34e1d92-85ba-4ac6-fc88-b5e2ff6ff000/public" alt="pic" className="w-[160px] md:w-[300px] mx-auto " loading='lazy' />
                         </a>
+
                     </div>
                     <div className="">
                         <a href="https://amzn.to/4aKP4yD" className="w-full d-grid leading-none">

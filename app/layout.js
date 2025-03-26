@@ -21,6 +21,8 @@ export default function RootLayout({ children }) {
       <head>
         {/* //-------------------------------------------------------- */}
 
+
+
         <input type="hidden" value="arayurveda.shop" id="sellerDomain" />
 
         <script
@@ -32,6 +34,60 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://fastrr-boost-ui.pickrr.com/assets/styles/shopify.css"
         ></link>
+
+
+        {/* <!-- Criteo Loader File --> */}
+        <script type="text/javascript" src="//dynamic.criteo.com/js/ld/ld.js?a=119702" async="true"></script>
+        {/* <!-- END Criteo Loader File --> */}
+
+
+        {/* <!-- Criteo Homepage Tag --> */}
+
+
+        <Script strategy="lazyOnload" type="text/javascript">
+          {`
+
+      window.criteo_q = window.criteo_q || [];
+  var deviceType = /iPad/.test(navigator.userAgent) ? "t" : /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent) ? "m" : "d";
+  window.criteo_q.push(
+    { event: "setAccount", account: 119702 },
+     { event: "setEmail", email: "##Email Address of User##" },
+    { event: "setSiteType", type: deviceType},
+    { event: "viewHome" }
+  );
+
+          `}
+        </Script>
+
+        {/* <!-- END Criteo Homepage Tag --> */}
+
+
+
+
+        <Script strategy="lazyOnload" type="text/javascript">
+          {`
+
+      window.criteo_q = window.criteo_q || [];
+  var deviceType = /iPad/.test(navigator.userAgent) ? "t" : /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent) ? "m" : "d";
+  window.criteo_q.push(
+    { event: "setAccount", account: 119702 },
+    { event: "setEmail", email: "##Email Address of User##" },
+    { event: "setSiteType", type: deviceType},
+    { event: "viewItem",
+       item: "##Product ID##"
+     }
+  );
+
+
+          `}
+        </Script>
+
+
+
+
+
+
+
 
         {/* <script
 
@@ -87,8 +143,8 @@ export default function RootLayout({ children }) {
         />
         <Script
           strategy="lazyOnload"
-          // defer
-          // async
+        // defer
+        // async
         >
           {`
                     window.dataLayer = window.dataLayer || [];

@@ -13,7 +13,7 @@ export const CustomerDataValue = [
         label: "फोन नंबर लिखिए",
         icon: "+91",
         inputValue: {
-            type: "text",
+            type: "number",
             name: "phone",
             maxLength: 10,
             minLength: 10

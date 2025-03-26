@@ -132,7 +132,7 @@ const Form = () => {
                     </div>
                 </div>
 
-                <AmaFlipDialog />
+                <AmaFlipDialog type={"ts"}/>
 
             </div>
         </section >

@@ -10,7 +10,7 @@ const YoutubeCarousel = () => {
         autoPlay
         infiniteLoop
         showStatus={true}
-        showThumbs={false}
+        // showThumbs={false}
         interval={3000}
         showArrows={true}
       >

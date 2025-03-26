@@ -13,7 +13,7 @@ import dynamic from 'next/dynamic';
 //     loading: () => <p>load</p>
 // });
 
-const FormLoader = dynamic(() => import('@/app/commonUse/loader/FormLoader'), {
+const FormLoader = dynamic(() => import('../../commonUse/loader/FormLoader'), {
     loading: () => <p>loader</p>
 });
 

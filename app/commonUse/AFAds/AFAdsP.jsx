@@ -12,7 +12,7 @@ const AFAdsP = () => {
             </div>
             <p className="text-3xl -mb-2 font-semibold">We are Available:</p>
             <div className="flex w-full justify-center items-center gap-5">
-                <a href="https://bit.ly/3w4Z8Ds    " className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/1369a0a5-d191-4392-bf47-5c170ecb8600/public" alt="pic" className="w-40" width='100%' height='100%' /></a>
+                <a href="https://bit.ly/3w4Z8Ds" className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/1369a0a5-d191-4392-bf47-5c170ecb8600/public" alt="pic" className="w-40" width='100%' height='100%' /></a>
                 <a href="https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S?th=1" className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/3edacd08-1afb-49b1-9aba-2cdda7681400/public" alt="pic" className="w-40" width='100%' height='100%' /></a>
             </div>
         </div>

@@ -32,7 +32,7 @@ function WhyChoose() {
                             return <div className='rounded-xl p-2 sm:p-5 bg-white' key={key}>
                                 <div className="grid grid-cols-2 gap-3">
                                     <img src={e.image1} alt="pic" width='100%' height='100%' className='rouded-xl' loading='lazy' />
-                                    <img src={e.image2} alt="pic" width='100%' height='100%' className='rouded-xl' loading='lazy'/>
+                                    <img src={e.image2} alt="pic" width='100%' height='100%' className='rouded-xl' loading='lazy' />
                                 </div>
                                 <p className="mt-3">{e.comment}</p>
                                 <div className=" w-2/12 ml-auto mt-3">
@@ -43,11 +43,13 @@ function WhyChoose() {
                         })}
                     </div>
                     <div className="sm:hidden">
-                        <Carousel autoPlay interval={4000} infiniteLoop showThumbs={false} showStatus={false} showArrows={false} useKeyboardArrows={true}>
+                        <Carousel autoPlay interval={4000} infiniteLoop
+                            // showThumbs={false}
+                            showStatus={false} showArrows={false} useKeyboardArrows={true}>
                             {revCus.map((e, key) => {
                                 return <div className='rounded-xl m-2 p-2 sm:p-5 bg-white' key={key}>
                                     <div className="grid grid-cols-2 gap-3">
-                                        <img src={e.image1} alt="pic" width='100%' height='100%' className='rouded-xl' loading='lazy'/>
+                                        <img src={e.image1} alt="pic" width='100%' height='100%' className='rouded-xl' loading='lazy' />
                                         <img src={e.image2} alt="pic" width='100%' height='100%' className='rouded-xl' loading='lazy' />
                                     </div>
                                     <p className="mt-3">{e.comment}</p>
@@ -63,7 +65,7 @@ function WhyChoose() {
                 </div>
 
             </div>
-            <Image src='/main/hf99_images/bg4.webp' fill loading='lazy'  alt='pic' />
+            <Image src='/main/hf99_images/bg4.webp' fill loading='lazy' alt='pic' />
         </div>
 
     )

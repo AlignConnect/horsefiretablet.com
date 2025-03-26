@@ -144,7 +144,7 @@ const Form = () => {
                 </div>
                 <Image src='https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/da3c5728-f79a-4973-c263-c16cac418900/public' loading='lazy' fill alt='pic' className='object-cover' />
             </div>
-            <AmaFlipDialog />
+            <AmaFlipDialog type={"ts"}/>
         </section>
 
     );

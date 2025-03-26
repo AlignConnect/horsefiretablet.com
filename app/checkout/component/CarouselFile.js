@@ -30,7 +30,7 @@ const CarouselFile = () => {
 
 
 
-            <Carousel autoPlay interval={4000} infiniteLoop showThumbs={false} showStatus={false} showArrows={false} selectedItem={handleActive}>
+            <Carousel autoPlay interval={4000} infiniteLoop showStatus={false} showArrows={false} selectedItem={handleActive}>
 
                 <div>
                     

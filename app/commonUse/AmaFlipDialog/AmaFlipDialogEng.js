@@ -21,34 +21,33 @@ const AmaFlipDialog = ({ type }) => {
 
     const { isPopupOpen, closePopup } = useGlobalContext();
 
-    const [ChLink, setChLink] = useState({ checkout: "https://bit.ly/49PTnY2", close: 'https://bit.ly/4dbnqfC' })
+    const [ChLink, setChLink] = useState({ checkout: "https://bit.ly/49PTnY2", close: 'https://bit.ly/4dbnqfC', amzn: "https://amzn.to/3ZESJeo", ar: "https://bit.ly/40NPeCB" })
 
 
     useEffect(() => {
 
-
         switch (type) {
 
             case "exo":
-                setChLink({ checkout: "https://bit.ly/49PTnY2", close: 'https://bit.ly/4dbnqfC', amzn: "https://amzn.to/3ZESJeo" })
+                setChLink({ checkout: "https://bit.ly/48jEPAD", close: 'https://bit.ly/4aDqvUX', amzn: "https://amzn.to/3YiUlZf", ar: "https://bit.ly/4gdfpat" })
                 break;
-
             case "ts":
-                setChLink({ checkout: "https://bit.ly/49PTnY2", close: 'https://bit.ly/4dbnqfC', amzn: "https://amzn.to/3ZESJeo" })
+                setChLink({ checkout: "https://bit.ly/49PTnY2", close: 'https://bit.ly/42xgK8E', amzn: "https://amzn.to/3ZESJeo", ar: "https://bit.ly/40NPeCB" })
                 break;
 
             case "bng":
-                setChLink({ checkout: "https://bit.ly/3YGv4tJ", close: 'https://bit.ly/3AyIspy', amzn: "https://amzn.to/4cqxFeC" })
+                setChLink({ checkout: "https://bit.ly/3YGv4tJ", close: 'https://bit.ly/3AyIspy', amzn: "https://amzn.to/4cqxFeC", ar: "https://bit.ly/40NPeCB" })
                 break;
 
             case "english":
-                setChLink({ checkout: "https://bit.ly/3An6CmM", close: 'https://bit.ly/3SDyTff', amzn: "https://amzn.to/3WvQTJD" })
-                break;
+                setChLink({ checkout: "https://bit.ly/3An6CmM", close: 'https://bit.ly/3SDyTff', amzn: "https://amzn.to/3WvQTJD", ar: "https://bit.ly/40NPeCB" })
 
+                break;
             default:
-                setChLink({ checkout: "https://bit.ly/49PTnY2", close: 'https://bit.ly/4dbnqfC', amzn: "https://amzn.to/3ZESJeo" })
+                setChLink({ checkout: "https://bit.ly/49PTnY2", close: 'https://bit.ly/4dbnqfC', amzn: "https://amzn.to/3ZESJeo", ar: "https://bit.ly/40NPeCB" })
                 break;
         }
+
 
         return () => {
 
