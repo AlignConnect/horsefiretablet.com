@@ -317,6 +317,9 @@ const nextConfig = {
         NEXT_APP_URL_HFTJNT: 'https://horsefiretablet.com/hftjnt',
         NEXT_APP_API_KEY_HFTJNT: 'qYssZueECtWDNirDXRKQRPRxojrDjmxDuTocXkNhqvUupuqeWI',
 
+        NEXT_APP_URL_HFTV: 'https://horsefiretablet.com/hftv',
+        NEXT_APP_API_KEY_HFTV: 'eNWBshbAUxfoUzVHhZCxVQKMIBUsSIDqKpJuXbqLwIJeebgoUj',
+
 
     },
 

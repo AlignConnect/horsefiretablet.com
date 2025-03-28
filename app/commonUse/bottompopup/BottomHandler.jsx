@@ -539,6 +539,13 @@ const BottomHandler = () => {
                 });
 
 
+            case "/hftv":
+                return setAp({
+                    api: process.env.NEXT_APP_URL_HFTV,
+                    key: process.env.NEXT_APP_API_KEY_HFTV
+                });
+
+
             default:
                 return setAp({
                     api: process.env.NEXT_APP_URL,
