@@ -151,7 +151,7 @@ const CustomerReview = () => {
                 <section className='w-full bg-white py-3 md:py-7'>
                     <div className=' mx-auto w-full max-w-3xl  overflow-hidden'>
                         <div className="px-2 pt-4 w-full">
-                            <div className='fontPoppins text-2xl md:text-4xl font-bold mb-4 text-center'>What Our <span className="text-[#e91b1b]">Customer's Say</span></div>
+                            <div className='fontPoppins text-2xl md:text-4xl font-bold mb-4 text-center'>Satisfactory <span className="text-[#e91b1b]">Results</span></div>
                             <div className="grid grid-cols-12 items-center justify-center py-5 px-2">
                                 <img
                                     src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/81cc7088-ecf0-4e4f-c7d2-10d614586200/public"

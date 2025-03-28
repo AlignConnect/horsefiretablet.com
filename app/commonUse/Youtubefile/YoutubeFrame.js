@@ -2,7 +2,6 @@
 import React, { useEffect, useState, useRef } from "react";
 
 const YoutubeFrame = ({ vid }) => {
-  const [load, setLoad] = useState(false);
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -24,18 +23,14 @@ const YoutubeFrame = ({ vid }) => {
 
   return (
     <div ref={videoRef}>
-      {load ? (
-        <iframe
-          className="!w-[100%] !mx-auto h-[230px] md:h-[440px] rounded-3xl px-2 py-3"
-          src={`https://www.youtube.com/embed/${vid}`}
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      ) : (
-        <div>Loading...</div>
-      )}
+      <iframe
+        className="!w-[100%] !mx-auto h-[230px] md:h-[440px] rounded-3xl px-2 py-3"
+        src={`https://www.youtube.com/embed/${vid}`}
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      ></iframe>
     </div>
   );
 };

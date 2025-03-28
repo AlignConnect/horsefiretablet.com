@@ -7,8 +7,12 @@ import { MdOutlineSupportAgent } from "react-icons/md";
 import dynamic from "next/dynamic";
 import { Noto_Serif_Devanagari } from "next/font/google";
 
-const Load = dynamic(() => import("@/app/commonUse/loader/FormLoader"), {
-    loading: () => <p>df</p>
+const AmaFlipDialog = dynamic(() => import('@/app/commonUse/AmaFlipDialog/AmaFlipDialog'), {
+    loading: () => <p>load</p>
+});
+
+const FormLoader = dynamic(() => import('@/app/commonUse/loader/FormLoader'), {
+    loading: () => <p>loader</p>
 });
 
 const noto = Noto_Serif_Devanagari({
@@ -20,7 +24,7 @@ const noto = Noto_Serif_Devanagari({
 const Form = () => {
     const searchParams = useSearchParams();
 
-    const { CustomerData, setCustomerData, checkoutDetail, setLoading, loading } = useGlobalContext();
+    const { CustomerData, setCustomerData, checkoutDetail, setLoading, loading, openPopup } = useGlobalContext();
 
     const handleChange = async (e) => {
         setCustomerData({ ...CustomerData, [e.target.name]: e.target.value })
@@ -37,7 +41,7 @@ const Form = () => {
             }).catch(error => console.log(error))
             const formdata = new FormData();
 
-            
+
 
             formdata.append("name", getCustomData.name)
             formdata.append("phone", getCustomData.phone)
@@ -60,21 +64,24 @@ const Form = () => {
             try {
                 const form = await fetch(`https://horsefiretablet.com/submitdata.php`, { body: formdata, method: "POST" })
                 const data = await form.json()
-                
+
 
                 const blogWebId = data.blogWebId ?? null;
                 if (data.ok) {
                     setLoading(false)
-                    let destination = decodeURI(data.destination)
-                    let name = destination.split("?name=")[1].split("&")[0]
-                    let phone = destination.split("&phone=")[1].split("&")[0]
-                    return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=${name}&phone=${phone}`
+                    // let destination = decodeURI(data.destination)
+                    // let name = destination.split("?name=")[1].split("&")[0]
+                    // let phone = destination.split("&phone=")[1].split("&")[0]
+                    // return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=${name}&phone=${phone}`
+                    return openPopup();
                 }
                 setLoading(false)
-                return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=&phone=`
+                // return window.location.href = `${checkoutDetail.checkoutUrl}?source=${blogWebId}&name=&phone=`
+                return openPopup();
             } catch (err) {
                 setLoading(false)
-                return window.location.href = checkoutDetail.checkoutUrl;
+                // return window.location.href = checkoutDetail.checkoutUrl;
+                return openPopup();
             }
         } catch (error) {
             setLoading(false)
@@ -87,7 +94,7 @@ const Form = () => {
         <div id="form" className={noto.className}>
 
             {
-                loading && <Load />
+                loading && <FormLoader />
             }
 
             <div className="">
@@ -136,6 +143,7 @@ const Form = () => {
                     </div>
                 </div>
             </div>
+            <AmaFlipDialog />
         </div>
 
 

@@ -28,10 +28,10 @@ const Header = () => {
     ]
 
     const settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 5000,
         slidesToShow: 2,
         slidesToScroll: 2,
         className: '',
@@ -56,7 +56,7 @@ const Header = () => {
 
 
 
-                <div className="absolute sm:-bottom-24 -bottom-20 left-0 right-0 sm:w-5/6 w-4/5 mx-auto">
+                <div className="absolute sm:-bottom-14 -bottom-28 left-0 right-0 sm:w-5/6 w-4/5 mx-auto">
 
                     <Slider {...settings} >
                         {
@@ -64,8 +64,8 @@ const Header = () => {
                                 <div className=" " key={key}>
                                     <div className="bg-white rounded-xl mx-2">
 
-                                        <img src={e.img} alt="" className="w-3/4 mx-auto" />
-                                        <div className="fontNoto text-center font-extrabold sm:text-[1.3vw] text-[4.6vw] leading-tight p-2">
+                                        <img src={e.img} alt="" className="w-[88%] sm:w-1/2 mx-auto" />
+                                        <div className="fontNoto text-center font-extrabold sm:text-[1.3vw] text-[4.3vw] leading-tight p-3">
                                             {e.title_text}
                                         </div>
                                     </div>
@@ -77,7 +77,7 @@ const Header = () => {
 
 
             </div>
-            <p className='text-white sm:mt-32 mt-28 mb-6'>
+            <p className='text-white sm:mt-32 mt-36 mb-6'>
                 पार्टनर के सामने अपनी मर्दानगी साबित करने के लिए यानि की अपने सेक्स प्रदर्शन से उन्हें संतुष्ट करने के लिए ये अनिवार्य कि आपका लिंग फौलादी हो और देर तक सख्त बना रहे साथ ही सेक्स की अवधि भी लम्बी हो।
             </p>
 

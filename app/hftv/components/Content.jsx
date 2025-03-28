@@ -16,6 +16,28 @@ const Ordernow = dynamic(() => import("./Ordernow"));
 
 function Content() {
 
+
+
+    const [customers, setCustomers] = useState(3258161);
+    const [orders, setOrders] = useState(106);
+
+    useEffect(() => {
+        const customerInterval = setInterval(() => {
+            setCustomers((prev) => prev + Math.floor(Math.random() * 1) + 2);
+        }, 10000);
+
+        return () => clearInterval(customerInterval);
+    }, []);
+
+    useEffect(() => {
+        const orderInterval = setInterval(() => {
+            setOrders((prev) => prev + Math.floor(Math.random() * 2) + 1);
+        }, 20000);
+
+        return () => clearInterval(orderInterval);
+    }, []);
+
+
     const sliderRefs = useRef([]);
     const [currentSlide, setCurrentSlide] = useState(0);
     const [totalSlides, setTotalSlides] = useState(0);
@@ -91,7 +113,38 @@ function Content() {
             <Ordernow />
 
 
-            <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/78db1c3f-3bf6-4a80-ae03-ff54192e3800/public" alt="" className='w-full sm:my-14 my-10' />
+            <div className="relative">
+                <a href='#form' className=""><img
+                    src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/ad5c0b53-07f4-4733-cbc6-ef985a1db000/public"
+                    alt=""
+                    className="w-full sm:my-14 my-10"
+                />
+                </a>
+                <div className="absolute top-[70%] left-[32%] transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+                    <div className="flex items-center leading-tight sm:gap-12 gap-4 ">
+                        {/* <div className='text-[#f9d61d] '>
+                            <span className='sm:text-2xl text-sm'>{customers.toLocaleString()}</span>
+                            +
+                            <span className=" text-white sm:text-lg text-[0.6rem]">
+                                <br /> Satisfied customers<br /> grow every minute</span></div>
+
+                        <div className='text-[#f9d61d] '>
+                            <span className='sm:text-2xl text-sm'>{orders.toLocaleString()}</span>
+                            +
+                            <span className=" text-white sm:text-lg text-[0.6rem]">
+                                <br /> People Ordered it in<br /> the Last 1 Hour</span>
+                        </div> */}
+
+                        <div className=' text-white text-[0.6rem] md:text-base'>
+                            <strong className='text-[#f9d61d] md:text-2xl text-[0.9rem] '>{customers.toLocaleString()}+</strong><br /> Satisfied customers<br /> grow every minute
+                        </div>
+                        <div className=' text-white text-[0.6rem] md:text-base'>
+                            <strong className='text-[#f9d61d] md:text-2xl text-[0.9rem]'>{orders.toLocaleString()}+</strong> <br /> People Ordered it in<br /> the Last 1 Hour
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
 
 
@@ -157,7 +210,7 @@ function Content() {
 
 
                 <div className="fontNoto text-red-600 sm:text-4xl text-3xl font-extrabold pt-5 text-center">
-                    "शीघ्रपतन वाले पुरुष के लिए खास प्रस्तावित"
+                    💦शीघ्रपतन वाले पुरुष के लिए खास प्रस्तावित"
                 </div>
 
                 <p className='text-black py-3'>
@@ -182,7 +235,7 @@ function Content() {
 
 
             <div className="fontPoppins text-center text-[#60ff10] text-2xl sm:text-3xl font-extrabold pb-4">
-                Watch Customer's Review
+                Success Story
             </div>
 
             <div className="mx-1  slider-container">
