@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+
+.fontPoppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fontBebas {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.fontNoto {
+    font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+.fontKalnia {
+    font-family: 'Kalnia', serif;
+}
+
+.fontArya {
+    font-family: 'Arya', sans-serif;
+}
+
+.fontRighteous {
+    font-family: "Righteous", sans-serif;
+}
+
+.fontJosefin {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.fontMaamli {
+    font-family: "Ga Maamli", sans-serif;
+}
+
+
+body {
+    background: black;
+    font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+
+
+
+.head_bg {
+    background-image: url("https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/5098f1d2-dc48-41db-0230-908d774b4f00/public");
+    background-size: cover;
+
+}
+
+.chooseus_bg {
+    background-image: url("https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/37294fe9-a86b-44bc-3eca-fed933af3300/public");
+    background-size: cover;
+}
+
+.reason_bg {
+    background-image: url("https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/dfb888fa-d687-453c-7d72-5fa655c94d00/public");
+    background-size: cover;
+}
+
+.lakh_bg{
+    background-image: url("https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/a412820d-511b-4a6b-b91d-5673b6488400/public");;
+    background-size: cover;
+}
+
+
+.form_bg {
+    background-image: url("https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/d6724951-3031-4fe8-afdb-73d916d92100/public");
+    background-size: cover;
+}

@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjord+One&display=swap');
+
+
+
+
+.fontNoto {
+  font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+.fontPoppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.fontAnton {
+  font-family: "Anton", sans-serif;
+}
+
+.fontFjord {
+  font-family: "Fjord One", serif;
+}
+
+.fontBebas {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.li_style {
+  text-align: start;
+  font-size: 19px;
+  margin: 11px auto;
+  margin: 15px auto;
+  list-style: none;
+  color: white;
+}
+
+
+.li_style::before {
+  content: '\2716';
+  background-color: #fa0204;
+  font-weight: 900;
+  padding: 2px 9px;
+  border-radius: 50px 50px 50px 50px;
+  margin-right: 6px;
+  box-shadow: 0px 6px 5px #5d0101 inset, 0px -6px 5px #5d0101 inset;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pop_imagehfv {
+  animation: zoom-in-zoom-out 1.2s cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(0.8, 0.8);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1, 1);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(0.8, 0.8);
+    opacity: 1;
+  }
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.tt {
+  text-align: center;
+  width: 100%;
+  transition: 0.7s ease-in;
+  bottom: 0%;
+}
+
+.xx {
+  bottom: -25%;
+  text-align: center;
+  width: 100%;
+  transition: 0.7s ease;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 16px;
+  color: #333;
+}
+
+.fingImg11 {
+  width: fit-content;
+  transform: scaleX(-1);
+}
+
+.OrderNowPopAmaFlip {
+  animation: zoominzoomoutama 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  display: inline-grid;
+}
+
+.fingImg {
+  width: fit-content;
+}
+
+
+.purchaseProduct {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: black;
+  overflow: hidden;
+  background: linear-gradient(to right, red, red 50%, black 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none;
+  animation: flipGif 4s ease-in infinite;
+  text-align: center;
+}
+
+.purchaseProductw {
+
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(to right, red, red 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none;
+  animation: flipGifss 4s ease-in infinite;
+  text-align: center;
+
+}
+
+@keyframes easeInBlink {
+
+  0%,
+  100% {
+    opacity: 1;
+    /* Fully visible */
+    transform: scale(1);
+    /* Normal size */
+  }
+
+  50% {
+    opacity: 1;
+    /* Semi-transparent */
+    transform: scale(1.2);
+    /* Slightly larger */
+  }
+}
+
+.animate-ease-in {
+  animation: easeInBlink 1.5s ease-in-out infinite;
+  /* 1.5s duration, smooth ease-in-out, loops infinitely */
+}
+
+@keyframes flipGif {
+  0% {
+    background-position: 100%
+  }
+
+  100% {
+    background-position: 0%
+  }
+}
+
+@keyframes flipGifss {
+  0% {
+    background-position: 100%
+  }
+
+  100% {
+    background-position: 0%
+  }
+}
+
+
+@media (max-width: 700px) {
+  .purchaseProduct {
+    font-size: 0.8rem;
+  }
+
+  .purchaseProductw {
+    font-size: 0.92rem;
+  }
+}
+
+
+@media (max-width:768px) {
+
+
+  .buytrusted {
+    margin: 0rem;
+    padding: 1rem 0.7rem;
+  }
+
+  .ptoductSubTitle {
+    font-size: 1.1rem !important;
+  }
+
+  .webtrust {
+    font-size: 1.1rem !important;
+  }
+
+  .webicon {
+    width: 3rem;
+  }
+
+  .paraFlipAma {
+    font-size: 1.1rem !important;
+  }
+
+  .fingImg {
+    width: 20%;
+  }
+
+  .fingImg11 {
+    width: 20%;
+  }
+
+}
+
+
+
+
+
+/* VideoPlayer.module.css */
+.youtubeVideo {
+  position: relative;
+}
+
+.youtubeVideo .ytp-title {
+  display: none !important;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.box-ah {
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  background-image:
+    repeating-linear-gradient(0deg, white, white 2px, transparent 2px, transparent 40px),
+    repeating-linear-gradient(90deg, white, white 2px, transparent 2px, transparent 40px),
+    repeating-linear-gradient(180deg, white, white 2px, transparent 2px, transparent 40px),
+    repeating-linear-gradient(270deg, white, white 2px, transparent 2px, transparent 40px);
+  background-size: 1px calc(100% + 40px), calc(100% + 40px) 1px, 1px calc(100% + 40px), calc(100% + 40px) 1px;
+  animation: boxBorderAnimation 1s infinite linear;
+
+}
+
+@keyframes boxBorderAnimation {
+  from {
+    background-position: 0 0, -40px 0, 100% -40px, 0 100%;
+  }
+
+  to {
+    background-position: 0 -40px, 0 0, 100% 0, -40px 100%;
+  }
+}
+
+
+.pop_imagehfv {
+  animation: zoom-in-zoom-out 1.2s cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(0.8, 0.8);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1, 1);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: scale(0.8, 0.8);
+    opacity: 1;
+  }
+}
+
+.selectLanguage option {
+  background-color: red;
+}
+
+
+.pop_imagehfv_big {
+  animation: zoom-in-zoom-out-big 2s cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+}
+
+@keyframes zoom-in-zoom-out-big {
+  0% {
+    transform: scale(0.8, 0.8);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.8, 0.8);
+    opacity: 1;
+  }
+}
+
+
+
+.grendiant {
+  color: rgb(251, 208, 63);
+  color: radial-gradient(circle, rgba(251, 208, 63, 1) 0%, rgba(255, 201, 82, 1) 100%);
+}
+
+
+.vvs {
+  /* color: black; */
+  animation: 1s srbob infinite;
+}
+
+@keyframes srbob {
+  0% {
+    transform: scale(110%);
+  }
+
+  50% {
+    transform: scale(100%);
+  }
+}
+
+
+
+.pop_imagehfv {
+  animation: zoom-in-zoom-out 1.2s cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(0.8, 0.8);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1, 1);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(0.8, 0.8);
+    opacity: 1;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+
+/* // css of zooming */
+
+
+
+
+/* // here is image zoom container css uploaded */
+
+.image-zoom-container {
+  position: relative;
+  width: 100%;
+  /* Adjust as needed */
+  height: 100%x;
+  /* Adjust as needed */
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.zoomed-image {
+  /* position: absolute; */
+  top: 0;
+  left: 100%;
+  /* Position it to the right of the image container */
+  width: 100%;
+  /* Match container size */
+  height: 100%;
+  /* Match container size */
+  background-repeat: no-repeat;
+  border: 1px solid #ddd;
+  z-index: 100;
+}
+
+
+
+
+.slick-dots_custom {
+  text-align: center !important;
+  padding-left: 0.6rem !important;
+}
+
+.slick-dots.slick-thumb li {
+  width: 100px;
+}
+
+.slick-dots.slick-thumb li img {
+  margin-top: 13px;
+  width: 100%;
+}
+
+.slick-dots.slick-thumb li.slick-active img {
+  opacity: 0.2;
+  border: 1px solid;
+
+}
+
+@media (max-width: 768px) {
+  .slick-dots.slick-thumb li {
+    width: 60px;
+  }
+
+  .slick-dots.slick-thumb li img {
+    margin-top: 0px;
+    width: 100%;
+  }
+}
+
+
+.poppinsFont {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.fontNoto {
+  font-family: "Noto Serif", serif;
+}
+
+
+.myx {
+
+  animation: myxx 0.5s alternate linear infinite;
+
+}
+
+
+@keyframes myxx {
+
+  from {
+    scale: 115%;
+  }
+
+  to {
+    scale: 100%;
+  }
+
+}
+
+
+/* // my color */
+
+.mycolor {
+  position: relative;
+  left: 0;
+  font-weight: 800;
+  color: black;
+  overflow: hidden;
+  background: linear-gradient(to right, red, red 50%, black 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  text-decoration: none;
+  animation: myc 4s ease-in infinite;
+
+}
+
+@keyframes myc {
+
+  0% {
+    /* width: 0; */
+    background-color: black;
+    background-position: 100%;
+  }
+
+  100% {
+    /* width: 100%; */
+    background-position: 0%;
+    background-color: red;
+  }
+
+}
+
+
+
+
+.myscale {
+  animation: 0.5s mscale alternate infinite linear;
+}
+
+
+@keyframes mscale {
+
+  to {
+    scale: 110%;
+
+  }
+
+  /* from {
+    scale: 100%;
+  } */
+
+}
+
+
+
+
+/* // input = type number  */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

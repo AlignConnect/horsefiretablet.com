@@ -1,0 +1,41 @@
+.india {
+    clip-path: polygon(5% 0%, 100% 0%, 95% 97%, 0% 100%);
+}
+
+ul {
+    list-style-type: none;
+    /* Remove default bullet points */
+    padding: 0;
+    /* Remove default padding */
+}
+
+li {
+    margin-bottom: 10px;
+    /* Add spacing between list items */
+}
+
+.checkmark {
+    color: red;
+    /* Set checkmark color to red */
+    margin-right: 5px;
+    /* Add spacing between checkmark and text */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.vvs {
+    animation: 0.6s srbob alternate infinite;
+}
+
+@keyframes srbob {
+    to {
+        transform: scale(90%);
+    }
+
+    from {
+        transform: scale(100%);
+    }
+}

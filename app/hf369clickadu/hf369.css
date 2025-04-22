@@ -1,0 +1,70 @@
+.horse-tablet-hf369 {
+    color: transparent;
+    font-size: 40px;
+    padding: 30px 0 15px;
+    font-weight: 900;
+    text-align: center;
+    /* text-shadow: 0px 2px 2px orange, 2px 2px 2px red, 3px 3px 3px green; */
+    -webkit-text-stroke: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: -1px 1px 20px rgba(255, 0, 0, 0.8);
+    -webkit-text-stroke-color: orange;
+}
+
+.tri-gre {
+    background-image: linear-gradient(0deg, rgba(248, 253, 72, 1) 50%, rgba(242, 235, 188, 1) 70%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.first-g {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 85% 100%, 85% 75%, 0% 75%);
+    background-color: yellow;
+    color: black;
+    font-weight: 700;
+    padding: 10px 0;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 4px;
+}
+
+
+.last-g {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 20% 75%, 15% 100%, 15% 75%, 0% 75%);
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    padding: 10px 0;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 4px;
+
+}
+
+@media(max-width:768px) {
+
+    .first-g,
+    .last-g {
+        font-size: 18px;
+        height: 50px;
+        width: 95%;
+        padding: 0 10px;
+    }
+
+
+}
+
+.trx {
+
+
+    background: rgb(235, 212, 78);
+    background: linear-gradient(180deg, rgba(235, 212, 78, 1) 10%, rgba(240, 63, 30, 1) 100%);
+}
