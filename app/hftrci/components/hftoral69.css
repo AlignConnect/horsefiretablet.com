@@ -1,0 +1,28 @@
+.cReview.talk-bubble {
+    display: inline-block;
+    position: relative;
+    background-color: #f19144;
+}
+
+.cReview.tri-right.btm-left:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%;
+    right: 50%;
+    top: -20px;
+    bottom: auto;
+    border: 22px solid;
+    border-color: transparent transparent transparent #f19144;
+}
+
+.talktext {
+    padding: 1em;
+}
+
+.talktext p {
+    /* remove webkit p margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}

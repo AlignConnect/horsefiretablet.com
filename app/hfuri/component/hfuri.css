@@ -1,0 +1,42 @@
+.tatva::before {
+
+    content: "";
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    bottom: 0;
+
+    /* position: absolute; */
+    background-color: yellow;
+    background-size: 50%;
+    z-index: -1;
+}
+
+.shadow-txt {
+
+    text-shadow: 0px 0px 3px yellow;
+
+}
+
+
+/* ------------ */
+
+.whitebox {
+    display: inline-block;
+    height: 155px;
+    width: 155px;
+    border: 1px solid white;
+    overflow: hidden;
+    margin: 10px;
+    background-color: white;
+}
+
+.imgbox {
+
+    background-image: url(/main/hfuri_images/first.webp);
+    position: relative;
+    height: 145px;
+    width: 145px;
+
+
+}

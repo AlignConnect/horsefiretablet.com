@@ -1,0 +1,17 @@
+.dp-shadow {
+
+    animation: hki 2s alternate infinite;
+
+}
+
+@keyframes hki {
+
+    from {
+        filter:hue-rotate(360deg);
+        
+    }
+
+    to {
+        filter: drop-shadow(-1px 3px 3px #1d1dfa);
+    }
+}

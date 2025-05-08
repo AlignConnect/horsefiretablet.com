@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.fontPoppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fontBebas {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.fontNoto {
+    font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+.fontKalnia {
+    font-family: 'Kalnia', serif;
+}
+
+.fontArya {
+    font-family: 'Arya', sans-serif;
+}
+
+body {
+    font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+
+.doctor_header_background {
+    background-image: linear-gradient(to right bottom, #8cc3ee, #9bc7ec, #a9ccea, #b6d0e8, #c3d5e6, #c1d4e7, #bfd3e9, #bdd2ea, #aecbf0, #a0c4f5, #93bcfa, #87b4ff);
+}
+
+.herbs_background {
+    background-image: linear-gradient(to right, #fffbdb, #fffbdf, #fffbe2, #fffbe6, #fffbea, #fffaea, #fff8ea, #fef7ea, #fef4e6, #fef1e2, #ffeddf, #ffeadc);
+}
+
+.shaddow_herbs {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form_shaddow {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.b_f_shaddow {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.why_choose_clippath {
+    clip-path: polygon(80% 0%, 80% 50%, 80% 100%, 0% 100%, 5% 50%, 0% 0%);
+    background: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .why_choose_clippath {
+        clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
+    }
+}

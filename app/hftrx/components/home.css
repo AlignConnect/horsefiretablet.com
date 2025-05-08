@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+
+.fontPoppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fontNoto {
+    font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+.fontKalnia {
+    font-family: 'Kalnia', serif;
+}
+
+.fontArya {
+    font-family: 'Arya', sans-serif;
+}
+
+.fontBona {
+    font-family: "Bona Nova SC", serif;
+}
+
+body {
+    font-family: 'Noto Serif Devanagari', sans-serif;
+    background-color: #F6F5F5;
+}
+
+
+.question_mark {
+    font-size: 100px;
+    width: 100%;
+
+}
+
+@media only screen and (max-width: 400px) {
+    .question_mark {
+        font-size: 40px;
+    }
+}

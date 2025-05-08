@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;800&display=swap');
+
+.fontPoppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fontNoto {
+    font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+.fontKalnia {
+    font-family: 'Kalnia', serif;
+}
+
+.fontArya {
+    font-family: 'Arya', sans-serif;
+}
+
+body {
+    font-family: 'Noto Serif Devanagari', sans-serif;
+    background: black;
+}
+
+
+.headerBackground {
+    background: rgb(172, 33, 32);
+    background: linear-gradient(180deg, rgba(172, 33, 32, 1) 0%, rgba(106, 16, 16, 1) 100%);
+}
+
+.gif_background {
+    background: rgb(172, 33, 32);
+    background: linear-gradient(168deg, rgba(172, 33, 32, 1) 44%, rgba(106, 16, 16, 1) 87%);
+}
+
+
+.ce_ixelgen_progress_bar {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ce_ixelgen_progress_bar .progress_bar_item {
+    margin-bottom: 1rem;
+}
+
+.ce_ixelgen_progress_bar .item_label,
+.ce_ixelgen_progress_bar .item_value {
+    font-weight: 600;
+    color: #333;
+}
+
+.ce_ixelgen_progress_bar .item_value {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.ce_ixelgen_progress_bar .item_bar {
+    position: relative;
+    height: 1.1rem;
+    width: 100%;
+    background-color: #000;
+    border-radius: 4px;
+
+}
+
+.ce_ixelgen_progress_bar .item_bar .progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    height: 1.1rem;
+    margin: 0;
+    background-color: #29BF12;
+    border-radius: 4px;
+    transition: width 2000 ease-in-out;
+}

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800;900&display=swap');
+
+.foo {
+    animation: foo 0.9s cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+}
+
+.clippath1 {
+
+    clip-path: polygon(0 0, 100% 0, 97% 50%, 100% 100%, 0 100%, 3% 50%);
+}
+
+@keyframes foo {
+    0% {
+        color: #000;
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.pop_imagehfv {
+    animation: zoom-in-zoom-out 1.2s cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(0.8, 0.8);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1, 1);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(0.8, 0.8);
+        opacity: 1;
+    }
+}
+
+.fontPoppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fontNoto {
+    font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+.parallelogram-container {
+    position: relative;
+    height: 200px;
+
+}
+
+.parallelogram {
+    height: 200px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+    background: white;
+}
+
+.small-parallelogram {
+    position: absolute;
+    width: 100%;
+    /* height: 100% !important; */
+    top: 0;
+    left: 0;
+    clip-path: polygon(1% 1%, 74% 1%, 99% 99%, 26% 99%);
+}
+
+.parallelogram-container1 {
+    position: relative;
+    height: 200px;
+
+}
+
+.parallelogram1 {
+    height: 200px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background: white;
+}
+
+.small-parallelogram1 {
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    top: 0;
+    left: 0;
+    clip-path: polygon(26% 1%, 99% 1%, 74% 99%, 1% 99%);
+}
+
+@media(max-width:768px) {
+
+    .parallelogram-container {
+        height: 33vw;
+    }
+
+    .parallelogram-container1 {
+        height: 33vw;
+
+    }
+
+    .parallelogram {
+        height: 33vw;
+
+    }
+
+    .parallelogram1 {
+        height: 33vw;
+
+    }
+}

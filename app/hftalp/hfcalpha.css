@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .imdata {
+    filter: drop-shadow(100px 30px 80px #d31313);
+} */
+
+.column-css {
+    column-count: 3;
+    column-gap: 20px;
+    column-rule-style: solid;
+}
+
+@media(max-width:768px) {
+
+    .column-css {
+
+        column-count: 1;
+
+    }
+
+}
