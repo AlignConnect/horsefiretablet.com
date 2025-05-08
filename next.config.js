@@ -350,6 +350,9 @@ const nextConfig = {
         NEXT_APP_URL_HFENGF: 'https://horsefiretablet.com/hfengf',
         NEXT_APP_API_KEY_HFENGF: 'PWBkRxxDOfWukCGvmJPAtrOhEqCcRtvhXQwDqVJOExAypjMkEk',
 
+        NEXT_APP_URL_HFTGF: 'https://horsefiretablet.com/hftgf',
+        NEXT_APP_API_KEY_HFTGF: 'fkaqAOJXXBhpfCfVGAVqlOMqIXMfDHUnJCmIQMLcRVBVcDVqNo',
+
 
     },
 
