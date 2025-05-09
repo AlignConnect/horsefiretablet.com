@@ -48,11 +48,9 @@ function Header() {
                                 <p className="">NO. 1 MEN WELLNESS PRODUCT IN INDIA</p>
                             </div>
                             <div className="w-3/12 text-center hidden sm:block ">
-                                <a href="https://bit.ly/3w4Z8Ds" className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/e4e0ec8f-b49a-4b0a-2798-6cb6af788800/public" alt="pic" className="w-[200px] md:w-[300px] mx-auto -mt-3" loading='lazy' /></a>
+                                <a href="https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d" className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/e4e0ec8f-b49a-4b0a-2798-6cb6af788800/public" alt="pic" className="w-[200px] md:w-[300px] mx-auto -mt-3" loading='lazy' /></a>
 
-                                {/* <a href="https://bit.ly/3WXXopP" className="w-full d-grid leading-none">
-                                    <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/456eb3fa-704d-4809-68f0-2e8e5c0b7800/public" alt="pic" className="myscale w-[150px] md:w-[300px] mx-auto " loading='lazy' />
-                                </a> */}
+                             
 
                             </div>
                         </div>

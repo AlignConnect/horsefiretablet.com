@@ -16,15 +16,12 @@ function Section1() {
                                 <span className=" bg-gradient-to-b from-red-500 to-red-700 px-5 rounded-full py-2">ORDER NOW</span>
                             </a> */}
 
-                            <a href="https://bit.ly/3w4Z8Ds" className="">
+                            <a href="https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d" className="">
                                 <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/e4e0ec8f-b49a-4b0a-2798-6cb6af788800/public" alt="pic" className="w-[200px] md:w-[300px] mx-auto " loading='lazy' />
                             </a>
 
-                            {/* <a href="https://bit.ly/3WXXopP" className="w-full d-grid leading-none">
-                                <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/456eb3fa-704d-4809-68f0-2e8e5c0b7800/public" alt="pic" className="myscale w-[150px] md:w-[300px] mx-auto " loading='lazy' />
-                            </a> */}
 
-                            <a href="https://amzn.to/4aKP4yD" className="w-full d-grid leading-none">
+                            <a href="https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S/ref=pd_rhf_cr_s_pd_crcd_d_sccl_1_4/259-5652770-9119827?th=1" className="w-full d-grid leading-none">
                                 <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/f80384a2-95de-44ba-1509-c69d0d2df500/public" alt="pic" className="w-[200px] md:w-[300px] mx-auto mb-2" loading='lazy' />
                             </a>
 

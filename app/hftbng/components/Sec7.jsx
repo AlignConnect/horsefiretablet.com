@@ -48,7 +48,7 @@ const Sec7 = () => {
                 <div className="lg:col-span-7">
 
                   <div className="flex sm:w-full justify-center  items-center sm:justify-start gap-3  border border-black p-2">
-                    <a href="https://bit.ly/3w4Z8Ds" className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/1369a0a5-d191-4392-bf47-5c170ecb8600/public" alt="pic" className="w-36 sm:w-40" width='100%' height='100%' /></a>
+                    <a href="https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d" className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/1369a0a5-d191-4392-bf47-5c170ecb8600/public" alt="pic" className="w-36 sm:w-40" width='100%' height='100%' /></a>
                     <a href="https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S?th=1" className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/3edacd08-1afb-49b1-9aba-2cdda7681400/public" alt="pic" className="w-36 sm:w-40" width='100%' height='100%' /></a>
 
                   </div>

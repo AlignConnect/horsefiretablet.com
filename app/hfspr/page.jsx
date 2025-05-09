@@ -79,10 +79,10 @@ const page = () => {
 
 
                 <div className="flex justify-center items-center gap-7 py-3">
-                    <a href="https://bit.ly/3yJa2zr">
+                    <a href="https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d">
                         <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/1369a0a5-d191-4392-bf47-5c170ecb8600/public" alt="" className='sm:w-40 w-32 mx-auto' />
                     </a>
-                    <a href="https://amzn.to/3QZQiOx">
+                    <a href="https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S/ref=pd_rhf_cr_s_pd_crcd_d_sccl_1_4/259-5652770-9119827?th=1">
                         <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/3edacd08-1afb-49b1-9aba-2cdda7681400/public" alt="" className='sm:w-40 w-32 mx-auto ' />
                     </a>
                 </div>

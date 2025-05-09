@@ -62,7 +62,7 @@ const OrderModel = ({ isPopupOpen, closePopup, CashDelivery, setCashDelivery }) 
 
                                     <div className='mt-3 mb-2 bg-green-500 inline-block px-4 py-1 rounded-md text-white font-bold'>
                                         {/* <button className='bg-green-500' >OK</button> */}
-                                        <Link href={"https://bit.ly/3w4Z8Ds"}
+                                        <Link href={"https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d"}
                                             onClick={() => {
                                                 closePopup();
                                                 setCashDelivery({ open: false, Orderid: "" });

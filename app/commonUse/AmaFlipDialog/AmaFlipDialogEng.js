@@ -21,30 +21,32 @@ const AmaFlipDialog = ({ type }) => {
 
     const { isPopupOpen, closePopup } = useGlobalContext();
 
-    const [ChLink, setChLink] = useState({ checkout: "https://bit.ly/49PTnY2", close: 'https://bit.ly/4dbnqfC', amzn: "https://amzn.to/3ZESJeo", ar: "https://bit.ly/40NPeCB" })
+    const [ChLink, setChLink] = useState({ checkout: "https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d", close: 'https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d', amzn: "https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S/ref=pd_rhf_cr_s_pd_crcd_d_sccl_1_4/259-5652770-9119827?th=1", ar: "https://arayurveda.shop/products/horse-fire-tablets" })
+
 
 
     useEffect(() => {
 
+
         switch (type) {
 
             case "exo":
-                setChLink({ checkout: "https://bit.ly/48jEPAD", close: 'https://bit.ly/4aDqvUX', amzn: "https://amzn.to/3YiUlZf", ar: "https://bit.ly/4gdfpat" })
+                setChLink({ checkout: "https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d", close: 'https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d', amzn: "https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S/ref=pd_rhf_cr_s_pd_crcd_d_sccl_1_4/259-5652770-9119827?th=1", ar: "https://arayurveda.shop/products/horse-fire-tablets" })
                 break;
             case "ts":
-                setChLink({ checkout: "https://bit.ly/49PTnY2", close: 'https://bit.ly/42xgK8E', amzn: "https://amzn.to/3ZESJeo", ar: "https://bit.ly/40NPeCB" })
+                setChLink({ checkout: "https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d", close: 'https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d', amzn: "https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S/ref=pd_rhf_cr_s_pd_crcd_d_sccl_1_4/259-5652770-9119827?th=1", ar: "https://arayurveda.shop/products/horse-fire-tablets" })
                 break;
 
             case "bng":
-                setChLink({ checkout: "https://bit.ly/3YGv4tJ", close: 'https://bit.ly/3AyIspy', amzn: "https://amzn.to/4cqxFeC", ar: "https://bit.ly/40NPeCB" })
+                setChLink({ checkout: "https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d", close: 'https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d', amzn: "https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S/ref=pd_rhf_cr_s_pd_crcd_d_sccl_1_4/259-5652770-9119827?th=1", ar: "https://arayurveda.shop/products/horse-fire-tablets" })
                 break;
 
             case "english":
-                setChLink({ checkout: "https://bit.ly/3An6CmM", close: 'https://bit.ly/3SDyTff', amzn: "https://amzn.to/3WvQTJD", ar: "https://bit.ly/40NPeCB" })
+                setChLink({ checkout: "https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d", close: 'https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d', amzn: "https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S/ref=pd_rhf_cr_s_pd_crcd_d_sccl_1_4/259-5652770-9119827?th=1", ar: "https://arayurveda.shop/products/horse-fire-tablets" })
 
                 break;
             default:
-                setChLink({ checkout: "https://bit.ly/49PTnY2", close: 'https://bit.ly/4dbnqfC', amzn: "https://amzn.to/3ZESJeo", ar: "https://bit.ly/40NPeCB" })
+                setChLink({ checkout: "https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d", close: 'https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d', amzn: "https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S/ref=pd_rhf_cr_s_pd_crcd_d_sccl_1_4/259-5652770-9119827?th=1", ar: "https://arayurveda.shop/products/horse-fire-tablets" })
                 break;
         }
 
