@@ -590,6 +590,12 @@ const BottomHandler = () => {
                     key: process.env.NEXT_APP_API_KEY_HFTGF
                 });
 
+            case "/hftszf":
+                return setAp({
+                    api: process.env.NEXT_APP_URL_HFTSZF,
+                    key: process.env.NEXT_APP_API_KEY_HFTSZF
+                });
+
 
             default:
                 return setAp({
