@@ -29,8 +29,11 @@ const page = () => {
         localStorage.setItem("PATH_KEY", "/hftsrhf");
     }, []);
 
+
+
     return (
         <div className='w-full sm:w-[568px] mx-auto  bg-black'>
+
 
             <Suspense fallback={<Skeleton />}>
                 <Header />

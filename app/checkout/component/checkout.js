@@ -18,7 +18,6 @@ export class CheckoutFile {
         web_site_url: get_next_url,
       },
     });
-    console.log("res: ", res);
 
     if (!res.ok) {
       throw new Error("Interal Server Error Please Try out After some Time");

@@ -6,10 +6,9 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Anton } from 'next/font/google';
-import YoutubeFrame from '../../components/YoutubeFrame';
 
 
-import Order from '@/app/hftnxtf/component/OrderNow';
+import Order from './FlipAmazon';
 
 
 const CustomPrevArrow = (props) => {
@@ -81,10 +80,10 @@ const Herbs = () => {
             </ul>
 
 
-            
+
             <div className='py-4'>
-                    <Order />
-                </div>
+                <Order />
+            </div>
 
 
             <div className='sm:w-[90%] mx-auto flex justify-center items-center gap-1 sm:gap-5 py-5'>

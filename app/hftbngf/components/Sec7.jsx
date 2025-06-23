@@ -1,3 +1,4 @@
+import BitlyLinks from '@/components/hooks/Bitly-links';
 import dynamic from 'next/dynamic';
 import Image from 'next/image'
 import React from 'react'
@@ -11,6 +12,8 @@ const Sec7 = () => {
 
   const { t } = useTranslation();
 
+  const links = BitlyLinks();
+
 
   return (
     <div className="">
@@ -20,7 +23,7 @@ const Sec7 = () => {
 
           <div className="md:col-span-6">
             <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/4f3c28a4-518e-4582-f422-a08143724900/public" alt="pic" className="" width='100%' height='100%' loading='lazy' />
-<FlipAmazon/>
+            <FlipAmazon />
           </div>
           <div className="md:col-span-6 text-[0.9rem] sm:text-[1rem] ">
             <p className="font-bold text-xl sm:text-3xl">{t("sec7.para1")} <span className="text-red-500">{t("sec7.para1_1")}</span></p>
@@ -48,8 +51,8 @@ const Sec7 = () => {
                 <div className="lg:col-span-7">
 
                   <div className="flex sm:w-full justify-center  items-center sm:justify-start gap-3  border border-black p-2">
-                    <a href="https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d" className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/1369a0a5-d191-4392-bf47-5c170ecb8600/public" alt="pic" className="w-36 sm:w-40" width='100%' height='100%' /></a>
-                    <a href="https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S?th=1" className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/3edacd08-1afb-49b1-9aba-2cdda7681400/public" alt="pic" className="w-36 sm:w-40" width='100%' height='100%' /></a>
+                    <a href={links?.flipkartMain} className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/1369a0a5-d191-4392-bf47-5c170ecb8600/public" alt="pic" className="w-36 sm:w-40" width='100%' height='100%' /></a>
+                    <a href={links?.amazonMain} className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/3edacd08-1afb-49b1-9aba-2cdda7681400/public" alt="pic" className="w-36 sm:w-40" width='100%' height='100%' /></a>
 
                   </div>
                 </div>

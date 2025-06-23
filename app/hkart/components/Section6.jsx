@@ -1,8 +1,6 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
-const FlipAmazon = dynamic(() => import('./FlipAmazon'), {
-    loading: () => <p>load</p>
-});
+
 
 const Section6 = () => {
 

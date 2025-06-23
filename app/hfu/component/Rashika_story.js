@@ -7,9 +7,9 @@ const khand = Khand({
     weight: ['300', '400', '500', '600', '700',]
 });
 
-const FlipAmazon = dynamic(() => import('./FlipAmazon'), {
+const FlipAmazon = dynamic(() => import('@/app/commonUse/AmaFlipDialog/FlipAmazon'), {
     loading: () => <p>loader</p>
-});
+})
 
 const noto = Noto_Serif_Devanagari({
     subsets: ['devanagari'],

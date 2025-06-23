@@ -13,11 +13,10 @@ const noto = Noto_Serif_Devanagari({
     weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
 });
 
-const FlipAmazon = dynamic(() => {
-    return import('./FlipAmazon')
-}, {
+const FlipAmazon = dynamic(() => import('@/app/commonUse/AmaFlipDialog/FlipAmazon'), {
     loading: () => <p>loader</p>
 })
+
 
 function Order_kiya() {
     return (<div className={noto.className}>

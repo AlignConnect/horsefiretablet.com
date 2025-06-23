@@ -13,7 +13,6 @@ const BottomPopupForm1 = () => {
 
 
     const exoclick_tracking = searchParams.get('bullriderorders');
-    // console.log('exoclick_tracking: ', exoclick_tracking);
 
 
     useEffect(() => {

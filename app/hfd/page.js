@@ -1,10 +1,10 @@
+"use client"
 import dynamic from 'next/dynamic';
 
 
 const Section1 = dynamic(() => import('./components/Section1'), {
     loading: () => <p>loader</p>
 });
-
 
 
 // const FlipAmazon = dynamic(() => import('./components/FlipAmazon'), {

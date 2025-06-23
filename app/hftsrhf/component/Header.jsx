@@ -6,7 +6,7 @@ import { Anton } from 'next/font/google'
 
 import { Noto_Sans_Devanagari } from "next/font/google";
 // import Order from '@/app/hfck/component/Order';
-import Order from '@/app/hftnxtf/component/OrderNow';
+import Order from './FlipAmazon';
 
 const devanagariFont = Noto_Sans_Devanagari({
     subsets: ["devanagari", "latin"],

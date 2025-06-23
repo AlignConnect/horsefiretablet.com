@@ -9,7 +9,7 @@ const Section1 = dynamic(() => import('./components/Section1'), {
 
 
 
-const FlipAmazon = dynamic(() => import('./components/FlipAmazon'), {
+const FlipAmazon = dynamic(() => import('@/app/commonUse/AmaFlipDialog/FlipAmazon'), {
     loading: () => <p>load</p>
 });
 

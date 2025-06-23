@@ -3,7 +3,8 @@ import { Noto_Sans_Devanagari } from 'next/font/google';
 import React from 'react'
 
 
-import Order from '@/app/hftnxtf/component/OrderNow';
+// import Order from '@/app/hftnxtf/component/OrderNow';
+import Order from './FlipAmazon';
 
 
 

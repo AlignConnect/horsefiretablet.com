@@ -1,11 +1,11 @@
+import BitlyLinks from '@/components/hooks/Bitly-links';
 import Image from 'next/image'
 import React from 'react'
 
 const Sec8 = () => {
 
-  const data = [
+  const links = BitlyLinks();
 
-  ]
 
   return (
     <div className=' relative '>
@@ -20,8 +20,8 @@ const Sec8 = () => {
             <p className="font-bold text-2xl sm:text-4xl mt-2"> You will be able to perform like a star!</p>
             <p className="font-bold text-blue-600 my-5 sm:mt-16 text-2xl sm:text-[1.78rem]"> AVAILABLE ON</p>
             <div className="flex sm:w-full justify-center my-5 items-center sm:justify-start gap-3 sm:gap-5">
-                <a href="https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d" className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/1369a0a5-d191-4392-bf47-5c170ecb8600/public" alt="pic" className="w-36 sm:w-40" width='100%' height='100%' /></a>
-                <a href="https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S?th=1" className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/3edacd08-1afb-49b1-9aba-2cdda7681400/public" alt="pic" className="w-36 sm:w-40" width='100%' height='100%' /></a>
+              <a href={links?.flipkartMain} className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/1369a0a5-d191-4392-bf47-5c170ecb8600/public" alt="pic" className="w-36 sm:w-40" width='100%' height='100%' /></a>
+              <a href={links?.amazonMain} className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/3edacd08-1afb-49b1-9aba-2cdda7681400/public" alt="pic" className="w-36 sm:w-40" width='100%' height='100%' /></a>
 
             </div>
             <div className="">

@@ -3,7 +3,7 @@ import React from 'react'
 const most_selling_1 = () => {
     return (
         <div>
-            <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/edae6fac-1208-408c-3345-6885c4141c00/public" alt="" className='w-full'/>
+            <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/0cf31be1-9853-4620-43dc-7d8d34959400/public" alt="" className='w-full'/>
         </div>
     )
 }

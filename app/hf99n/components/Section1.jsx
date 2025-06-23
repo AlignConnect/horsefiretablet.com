@@ -1,6 +1,10 @@
+import BitlyLinks from '@/components/hooks/Bitly-links';
 import React from 'react'
 
 function Section1() {
+
+    const links = BitlyLinks();
+
     return (
         <div className='  '>
             <div className="max-w-4xl mx-auto bg-white py-5 sm:py-10">
@@ -16,12 +20,15 @@ function Section1() {
                                 <span className=" bg-gradient-to-b from-red-500 to-red-700 px-5 rounded-full py-2">ORDER NOW</span>
                             </a> */}
 
-                            <a href="https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d" className="">
+                            <a href={links?.flipkartMain}
+                                className="">
                                 <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/e4e0ec8f-b49a-4b0a-2798-6cb6af788800/public" alt="pic" className="w-[200px] md:w-[300px] mx-auto " loading='lazy' />
                             </a>
 
 
-                            <a href="https://www.amazon.in/Ayurveda-HorseFire-Tablet-Men/dp/B0BYJ8KM7S/ref=pd_rhf_cr_s_pd_crcd_d_sccl_1_4/259-5652770-9119827?th=1" className="w-full d-grid leading-none">
+                            <a href={links?.amazonMain}
+
+                                className="w-full d-grid leading-none">
                                 <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/f80384a2-95de-44ba-1509-c69d0d2df500/public" alt="pic" className="w-[200px] md:w-[300px] mx-auto mb-2" loading='lazy' />
                             </a>
 

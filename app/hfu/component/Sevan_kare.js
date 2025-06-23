@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
 import { Khand, Noto_Serif_Devanagari } from 'next/font/google'
 
-const FlipAmazon = dynamic(() => import('./FlipAmazon'), {
+const FlipAmazon = dynamic(() => import('@/app/commonUse/AmaFlipDialog/FlipAmazon'), {
     loading: () => <p>loader</p>
 });
 

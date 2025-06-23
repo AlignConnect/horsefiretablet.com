@@ -94,7 +94,6 @@ const BottomPopup = () => {
 
                             const ValueFind = mydata?.find((ele) => ele?.title == e.target.value)
 
-                            console.log(ValueFind)
                             dispatch(selectProductById({ selectProductData: ValueFind }))
 
                         }}
@@ -112,7 +111,12 @@ const BottomPopup = () => {
                 </div>
 
                 <div className="w-[180px]">
-                    <ShiProcket />
+                    {/* <ShiProcket /> */}
+                     <div>
+                        <a href='/checkout' className="bg-green-700 fontJosefin sm:text-xl text-center text-white font-semibold pt-1 pb-1 mt-3 sm:mt-0 px-4 rounded w-full mx-auto sm:px-14">
+                            BUY NOW
+                        </a>
+                    </div>
                 </div>
 
             </div>

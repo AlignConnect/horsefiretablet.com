@@ -1,3 +1,4 @@
+import BitlyLinks from '@/components/hooks/Bitly-links';
 import dynamic from 'next/dynamic';
 import Image from 'next/image'
 
@@ -6,6 +7,9 @@ const Flip = dynamic(() => import('./FlipAmazon'), {
 });
 
 function Header() {
+
+    const links = BitlyLinks();
+
     return (
         <div className='w-full relative'>
             <div className=" relative z-10  pb-[5vw] sm:pb-0">
@@ -48,9 +52,9 @@ function Header() {
                                 <p className="">NO. 1 MEN WELLNESS PRODUCT IN INDIA</p>
                             </div>
                             <div className="w-3/12 text-center hidden sm:block ">
-                                <a href="https://www.flipkart.com/r-ayurveda-horse-fire-tablets-ayurvedic-stamina-booster-men/p/itme353eac8ec05d" className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/e4e0ec8f-b49a-4b0a-2798-6cb6af788800/public" alt="pic" className="w-[200px] md:w-[300px] mx-auto -mt-3" loading='lazy' /></a>
+                                <a href={links?.flipkartMain} className=""><img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/e4e0ec8f-b49a-4b0a-2798-6cb6af788800/public" alt="pic" className="w-[200px] md:w-[300px] mx-auto -mt-3" loading='lazy' /></a>
 
-                             
+
 
                             </div>
                         </div>
