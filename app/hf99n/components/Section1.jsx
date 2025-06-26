@@ -29,7 +29,7 @@ function Section1() {
                             <a href={links?.amazonMain}
 
                                 className="w-full d-grid leading-none">
-                                <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/f80384a2-95de-44ba-1509-c69d0d2df500/public" alt="pic" className="w-[200px] md:w-[300px] mx-auto mb-2" loading='lazy' />
+                                <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/9b630eb5-2ca6-44f4-5d28-d95a6cb1d800/public" alt="pic" className="w-[200px] md:w-[300px] mx-auto mb-2" loading='lazy' />
                             </a>
 
                         </div>

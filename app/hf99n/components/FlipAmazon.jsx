@@ -11,7 +11,7 @@ const FlipAmazon = () => {
           
 
             <div className="p-3 sm:w-[700px] mx-auto text-center">
-                <h5 className="purchaseProduct leading-tight text-center py-2 mb-0">HORSE FIRE TABLET खरीदने के लिए निचे क्लिक करें</h5>
+                <h5 className="purchaseProduct leading-tight text-center py-2 mb-0">Flipkart, Amazon से खरीदें, पाएं हर आर्डर पर छूट !!</h5>
                 <div className="grid grid-cols-2 items-center justify-center gap-1 py-1">
                     <div className="">
 
@@ -30,7 +30,7 @@ const FlipAmazon = () => {
 
                         <a href={links?.amazonMain}
                             className="w-full d-grid leading-none">
-                            <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/f80384a2-95de-44ba-1509-c69d0d2df500/public" alt="pic" className="w-[164px] md:w-[300px] mx-auto mb-2" loading='lazy' />
+                            <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/9b630eb5-2ca6-44f4-5d28-d95a6cb1d800/public" alt="pic" className="w-[164px] md:w-[300px] mx-auto" loading='lazy' />
                         </a>
                     </div>
                 </div>
